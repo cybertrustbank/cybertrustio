@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0h120v120H0z"/>
+        <g transform="translate(45 25)">
+            <path fill="#000" fill-rule="nonzero" d="M35.34.27H.4v64.6h50.67V15.98L35.34.27zm.64 3.68l11.41 11.4H35.98V3.95zM2.55 62.71V2.43h31.27V17.5h15.09v45.21H2.55z"/>
+            <path stroke="#000" stroke-width="2" d="M48.001 16.747l1.382 1.382v-1.414L2.675 63.423h1.414L2.707 62.04v1.414l46.708-46.708h-1.414z"/>
+            <circle cx="35.38" cy="50.75" r="10" stroke="#000" stroke-width="2"/>
+            <path fill="#000" fill-rule="nonzero" d="M30.14 77.4l-1.52-1.3M35.38 40.75c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10c-.009-5.52-4.48-9.991-10-10zm2.49 10.35h-1.63v5.8h-2.41v-5.8h-1.15v-2.05h1.15v-1.32a2.257 2.257 0 0 1 2.43-2.43h1.79v1.99h-1.3a.493.493 0 0 0-.51.56v1.2h1.84l-.21 2.05z"/>
+        </g>
+        <g stroke="#000" stroke-width="2" transform="translate(17 8)">
+            <circle cx="8.525" cy="21.91" r="4.735"/>
+            <path d="M15.86 36.22a4.725 4.725 0 1 1-.01 9.45 4.725 4.725 0 0 1 .01-9.45zM4.73 52.91a4.74 4.74 0 1 1 .02 9.48 4.74 4.74 0 0 1-.02-9.48zM20.32 78.53a4.73 4.73 0 1 1 0 9.46 4.73 4.73 0 0 1 0-9.46zM80.91 14.05a4.725 4.725 0 1 1-.01 9.45 4.725 4.725 0 0 1 .01-9.45zM48.72.01a4.73 4.73 0 1 1 .02 9.46 4.73 4.73 0 0 1-.02-9.46z"/>
+        </g>
+        <g stroke="#000" stroke-width="2">
+            <path d="M64.61 17.92h1.95l-1-1v8.91l1-1h-1.95l1 1v-8.91l-1 1zM29.858 32.481l.49-1.89-1.218.717 17.26 4.46-.718-1.22-.49 1.88 1.218-.716-17.26-4.45.718 1.219zM37.714 48.223l-.52-1.88-.696 1.23 10.02-2.79-1.232-.696.52 1.88.696-1.23-10.02 2.79 1.232.696zM26.488 65.616l-.3-1.92-.832 1.142 21.16-3.34-1.144-.834.3 1.92.832-1.142-21.16 3.34 1.144.834zM41.227 87.623l-1.38-1.38v1.414l6.68-6.68h-1.414l1.38 1.38v-1.414l-6.68 6.68h1.414zM93.003 30.857l1.38 1.38v-1.414l-5.01 5.01 1.412-.003-1.38-1.37.003 1.416 5.01-5.02-1.415.001z"/>
+        </g>
+        <path fill="#000" d="M80.988 92.84a.924.924 0 0 0-.987 0L75 96V85.276l2.043-.266 2.891-.01a.922.922 0 0 0 1.12 0l2.892.01 2.042.266V96l-5-3.16z"/>
+        <g fill="#000">
+            <g transform="translate(49 29)">
+                <circle cx="7" cy="1" r="1"/>
+                <circle cx="13" cy="1" r="1"/>
+                <circle cx="10" cy="4" r="1"/>
+                <circle cx="4" cy="4" r="1"/>
+                <circle cx="1" cy="1" r="1"/>
+            </g>
+            <g transform="translate(49 35)">
+                <circle cx="7" cy="1" r="1"/>
+                <circle cx="13" cy="1" r="1"/>
+                <circle cx="10" cy="4" r="1"/>
+                <circle cx="4" cy="4" r="1"/>
+                <circle cx="1" cy="1" r="1"/>
+            </g>
+            <g transform="translate(49 41)">
+                <circle cx="7" cy="1" r="1"/>
+                <circle cx="13" cy="1" r="1"/>
+                <circle cx="10" cy="4" r="1"/>
+                <circle cx="4" cy="4" r="1"/>
+                <circle cx="1" cy="1" r="1"/>
+            </g>
+            <g transform="translate(49 47)">
+                <circle cx="7" cy="1" r="1"/>
+                <circle cx="13" cy="1" r="1"/>
+                <circle cx="10" cy="4" r="1"/>
+                <circle cx="4" cy="4" r="1"/>
+                <circle cx="1" cy="1" r="1"/>
+            </g>
+            <g transform="translate(49 53)">
+                <circle cx="7" cy="1" r="1"/>
+                <circle cx="13" cy="1" r="1"/>
+                <circle cx="10" cy="4" r="1"/>
+                <circle cx="4" cy="4" r="1"/>
+                <circle cx="1" cy="1" r="1"/>
+            </g>
+            <g transform="translate(49 59)">
+                <circle cx="7" cy="1" r="1"/>
+                <circle cx="13" cy="1" r="1"/>
+                <circle cx="10" cy="4" r="1"/>
+                <circle cx="4" cy="4" r="1"/>
+                <circle cx="1" cy="1" r="1"/>
+            </g>
+            <g transform="translate(49 65)">
+                <circle cx="7" cy="1" r="1"/>
+                <circle cx="13" cy="1" r="1"/>
+                <circle cx="10" cy="4" r="1"/>
+                <circle cx="4" cy="4" r="1"/>
+                <circle cx="1" cy="1" r="1"/>
+            </g>
+            <g transform="translate(49 71)">
+                <circle cx="7" cy="1" r="1"/>
+                <circle cx="4" cy="4" r="1"/>
+                <circle cx="1" cy="1" r="1"/>
+            </g>
+        </g>
+    </g>
+</svg>
