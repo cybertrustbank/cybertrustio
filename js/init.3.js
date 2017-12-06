@@ -128,7 +128,7 @@ $(document).ready(function() {
        });
     }
     getJsonData();
-    setInterval(getJsonData,1000);
+    setInterval(getJsonData,30000);
 
     // 获取CT数据
     function getCTdata() {
@@ -147,7 +147,45 @@ $(document).ready(function() {
       });
     }
     getCTdata();
-    setInterval(getCTdata,1000);
+    setInterval(getCTdata,30000);
+
+    // 获取当前cabs数量
+    function getcabs(){
+      $.ajax({
+        type : "POST",
+        url : "https://icoapi.cybertrust.io/api/Account/GetMarketingPrice",
+        dataType : "json",
+        data : {},
+        success : function(data) {
+            $(".current_cabs").html((30000-parseFloat(data.Json.ICO.RestCABS)).toFixed(2));
+            $(".progress").width((30000-parseFloat(data.Json.ICO.RestCABS))*100/30000+'%');
+            $(".allprogress").width((30000-parseFloat(data.Json.ICO.RestCABS))*100/230000+'%');
+            $("#restCabs").html((230000-(30000-parseFloat(data.Json.ICO.RestCABS))).toFixed(2));
+            if(parseFloat(data.Json.ICO.RestCABS)>=30000){
+              $(".progress").width('100%');
+            }
+            $.each(data.Json.AssetInfos,function(i,obj){
+              if(obj.AssetTypeId == 2){
+                $(".BTC").html(obj.MarketPrice);
+              }
+              if(obj.AssetTypeId == 5){
+                $(".ETH").html(obj.MarketPrice);
+              }
+              if(obj.AssetTypeId == 6){
+                $(".ETC").html(obj.MarketPrice);
+              }
+              if(obj.AssetTypeId == 9){
+                $(".BCC").html(obj.MarketPrice);
+              }
+            })
+        },
+        error:function(data){
+          return;
+        }
+    });
+  }
+  getcabs();
+  setInterval(getcabs,30000);
     
 });
 
