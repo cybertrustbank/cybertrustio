@@ -65,33 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106150580-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-106150580-1');
-</script>
-
-<!-- Facebook Pixel Code-->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '344954509309840');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=344954509309840&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
 
 <!-- Reddit Conversion Pixel -->
 <script>
@@ -130,7 +104,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 	<!-- HEADER -->
 	<header class="header">
-		<div class="language"><a href="homepage_cn.html">中文</a></div>
+		<!-- hrader-progress -->
+		<div class="header_progress">
+				<div class="row progress_content">
+					<div class="col-md-3 col-sm-12" style="padding-left:0;">Total CABS sold:
+						<span class="red current_cabs">
+							<div class="loading">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>	
+						</span> out of 230,000
+					</div>
+					<div class="col-md-9 col-sm-12 progress_width">
+						<div class="allprogress"></div>
+					</div>
+				</div>
+			</div>
+			<!-- hrader-progress -->
+			<div class="language">
+				<a href="homepage_cn.html">
+					<img src="images/zh.png" alt="中文">
+				</a>
+			</div>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container">
 				<a class="navbar-brand" href="https://www.cybertrust.io">
@@ -161,11 +157,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<a class="nav-link link-icon" href="CABS-Launch-Business-Case.pdf" target="_blank">Find Out More</a>
 						</li>
 
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a class="nav-link link-icon" href="https://medium.com/cybertrustbank" target="_blank">Blog</a>
-						</li>
+						</li> -->
 						<li class="nav-item">
 							<a class="nav-link link-icon" href="faq_en.html">FAQ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-icon" href="services.html">Services</a>
 						</li>
 						<!-- <li class="nav-item">
 							<a class="nav-link link-icon" href="http://t.me/cybertrustbank">Telegram</a>
@@ -204,12 +203,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<span >Sign In</span>
 							</a>
 						</li> 
-
-
 							
 						<li class="nav-item">
 							<a type="button" class="btn btn--lg btn--round btn-danger Participatenow" href="https://ico.cybertrust.io/in/Register">Sign Up</a>
 						</li> 
+
+						<li class="nav-item changeLanguage">
+							<div style="position:absolute;top:36px;">
+								<a href="homepage_cn.html">
+									<img src=" images/zh.png" alt="中文" style="max-width:50%;">
+								</a>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -218,190 +223,121 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<a style="color:#e90000" href="cybertrust_delay_notification.html" target="_blank">Pre-ICO delayed by 2 days due to legal changes</a>
 			<a style="color:#000" href="cybertrust_delay_notification.html" target="_blank">- Read more</a>
 		</div>
-	</header>
-	<!-- / HEADER -->
+		<!-- / HEADER -->
+	</header> 
+	
 
 	<main class="main counter-wrap--main">
-		<!-- Fixed Counter -->
-		<div class="counter-wrap counter-wrap--fixed">
-				<div class="container">
-					<div class="counter">
-						<div class="counter__top">
-							<dl class="counter__title">
-								<dt>
-									<span>Private Round</span> 
-									<!--<div class="counter__tag">
-										<span class="text-danger">$10 456 483</span>
-										oversubscribed
-									</div>-->
-								</dt>
-								<dd>30th October - 28th November</dd>
-							</dl>
-							<div class="counter__right">
-								<div class="countdown"></div>
-								<button type="button" class="btn btn--lg btn--round btn-danger Participatenow" data-toggle="modal" data-target="#modal-participate">Participate Now</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- / Fixed Counter -->
-			
 			<!-- Counter -->
-			 <div class="counter-wrap">
-				<div class="container">
-					<div class="counter">
-						<div class="counter__top">
-							<dl class="counter__title">
-								<dt>Private Round</dt>
-								<dd>30th October - 28th November</dd>
-							</dl>
-							<!-- <div class="bar">
-								<dl class="bar__status" style="right: 21.3%">
-									<dt>19,684.82 ETH</dt>
-									<dd>Raised</dd>
-								</dl>
-								<span class="bar__line" style="width: 78.74%"></span>
-							</div> -->
-							<div class="bar">
-								<dl class="bar__status counter__target" style="right: 0.1%">
-									<dt>
-									<a href="#!" data-toggle="dropdown" style="color:#e90000">
-									<nth>42,770.81 ETH</nth>  
-									  <img src="images/arrow.svg" alt="" class="">
-									 </a>
-									 <div class="dropdown-menu">
-										<!-- <div>9,442.27 ETH</div> -->
-										<table>
-											<tr>
-												<p>Breakdown of Amounts Collected</p>
-												<br>
-												
-											</tr>
-											<tr>
-												<td><a href="#">BTC</a></td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td><a href="#">BCC</a></td>
-												<td>1,000</td>
-											</tr>
-											<tr>
-												<td><a href="#">ETH</a></td>
-												<td>1413.272</td>
-											</tr>
-											<tr>
-												<td><a href="#">ETC</a></td>
-												<td>10,000</td>
-											</tr>
-											
-											<tr>
-												<td><a href="#">CHF</a></td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td><a href="#">EUR</a></td>
-												<td>€9,680,000</td>
-											</tr>
-											<!-- <tr>
-												<td colspan="2">
-													<p>Lorem Ipsum</p>
-												</td>
-											</tr> -->
-										</table>
-	
+			<div class="counter-wrap">
+				<div class="container row round_content">
+					<!-- <div class="row round_content"> -->
+						<div class="text-center round_detail">
+							<div class="abs_btn">
+								<div>CLOSED</div>
+							</div>
+							<h2>Private round</h2>
+							<p>October 30th - November 28th</p>
+							<h3>42,770.81 ETH</h3>
+							<p>Exceeded target</p>
+							<p>Soft Cap:&nbsp;&nbsp;25,000 ETH</p>
+						</div>
+						<div class="text-center round_detail red">
+							<div class="abs_btn">
+								<div>OPEN NOW</div>
+							</div>
+							<h2 class="red">Pre-ICO round</h2>
+							<p>November 29th - January 5th, 1:00pm UTC</p>
+							<h3 class="red">
+								<span class="current_cabs">
+									<div class="loading">
+										<span></span>
+										<span></span>
+										<span></span>
 									</div>
-									</dt>
-									<dd>Raised - Exceeded Target</dd>
-								</dl>
-								<span class="bar__line" style="width: 100%"></span>
+								</span>&nbsp;CABS
+							</h3>
+							<div class="pre_progress">
+								<div class="progress"></div>
 							</div>
-							<dl class="counter__target mobilhide">
-								<dd class="dropdown">
-									<a href="#!" data-toggle="dropdown" class="mobilhide">
-										<nth>25,000 ETH</nth>
-									</a>
-								</dd>
-								<dt class="mobilhide">Soft Cap</dt>
-							</dl>
+							<p>Round cap:&nbsp;&nbsp;30,000 CABS</p>
+							<div class="join_btn">
+								<a type="button" class="btn btn--round btn-danger Participatenow" href='https://ico.cybertrust.io/in/Register' target='_blank' >Join the Pre-ICO Now!</a>
+							</div>
 						</div>
-						<!-- countdown_one -->
-						<div class="half_layout" style="margin:0 auto;display: block;">
-								<div class="" style="text-align: center;    font-size: 18px;font-weight: 400;">
-										Pre-ICO Now Open! - Time Left
+						<div class="text-center round_detail">
+							<div class="abs_btn">
+								<div>COMING SOON</div>
+							</div>
+							<h2>ICO round</h2>
+							<p>Date: To Be Decided</p>
+							<div class="countdown">
+								<div class="loading">
+									<span></span>
+									<span></span>
+									<span></span>
 								</div>
-								<div class="countdown"></div>
 							</div>
-							<!-- countdown_two -->
-							<!-- <div class="half_layout">
-								<div class="" style="text-align: center;    font-size: 18px;font-weight: 400;">
-										Time Until ICO Round
-								</div>
-								<div class="countdown_two"></div>
-							</div> -->
-		
-							<div class="" style="margin:20px auto 10px; text-align: center; font-size: 18px;">
-								Base Price for 1 CABS:<span style="color:#e90000;padding-left:10px">0.6 ETH (Minimum 0.1 CABS)</span>
-								<!-- <dl class="counter__price">
-									<dt>Base Price for 1 CABS:</dt>
-									<dd>0.6 ETH</dd>
-								</dl> -->
-								<!-- <p></p> -->
-								<!-- <p class="counter__info">
-										All fiat escrowed  <br>with SYZ &amp; CO BANQUE
-								</p> -->
-							</div>
-	
-						<!-- <div class="" style="text-align: center;    font-size: 18px;font-weight: 400;">
-								Time Left Until Pre-Sale Round
 						</div>
-						<div class="counter__bottom">
-							<dl class="counter__price">
-								<dt>Base Price for 1 CABS:</dt>
-								<dd>0.6 ETH</dd>
-							</dl>
-	
-							<div class="countdown"></div>
-					
-							<p class="counter__info">
-								All fiat escrowed  <br>with SYZ &amp; CO BANQUE
-							</p>
-						</div>
-	
-						<div class="" style="text-align: center;    font-size: 18px;font-weight: 400;">
-							Time Until ICO Round
-						</div>
-						<div class="counter__bottom">
-							<p></p>
-							<div class="countdown_two"></div>
-							<p></p>
-						</div> -->
-	
-					</div>
+					<!-- </div> -->
 				</div>
-			</div>
+			</div> 
 			<!-- / Counter -->
 	
-			<div class="buttons-wrap">
-				<a type="button" class="btn btn--lg btn--round btn-danger Participatenow" href='https://ico.cybertrust.io/in/Register' target='_blank' >Join the Pre-ICO Now!</a>
-				<a href="CyberTrust-WhitePaper.pdf" target="_blank" class="link-icon link-icon--underline Whitepaper">
-					<i class="fa fa-file-text-o" style="padding-right:5px;"></i>
-					<span>Get the Whitepaper</span>
-				</a>
+			<div class="current_price">
+				Current CABS price：
+				<span>
+					<img src=" images/btc.png" alt="">
+					<span class="BTC">
+						<div class="loading">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div> 	
+					</span> BTC
+				</span>
+				<span>
+					<img src=" images/eth.png" alt="">
+					<span class="ETH">
+						<div class="loading">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>	
+					</span> ETH
+				</span>
+				<span>
+					<img src=" images/bcc.png" alt="">
+					<span class="BCC">
+						<div class="loading">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>	
+					</span> BCC
+				</span>
+				<span>
+					<img src=" images/etc.png" alt="">
+					<span class="ETC">
+						<div class="loading">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>	
+					</span> ETC
+				</span>
 			</div>
-	
+			
 			<!-- Secure -->
-			<section class="section section--xl section--center text-center" style="background-image: url('images/bgr-chess.png');">
-				
-	
+			<section class="section section--xl section--center text-center" style="background-image: url(' images/bgr-chess.png');">
 					<h1 class="section__title section__title--arrows">
 						<!-- <svg role="img" class="icon icon-angle-double-left" href="images/quote-1.svg>
-						 <use xlink:href="images/quote-1.svg#icon-angle-double-left"></use>
+							<use xlink:href="images/quote-1.svg#icon-angle-double-left"></use>
 						</svg> -->
-						<img class="icon icon-angle-double-left" src="images/quote-1.svg" alt="" style="position:relative;right:110px;top:40px;">
+						<img class="icon icon-angle-double-left" src=" images/quote-1.svg" alt="" style="position:relative;right:110px;top:40px;">
 						<span>Bridging traditional   
-
-						</span><img src="images/quote-2.svg" alt="" class="icon icon-angle-double-right" style="position:relative;left:110px;top:40px;">
+	
+						</span><img src=" images/quote-2.svg" alt="" class="icon icon-angle-double-right" style="position:relative;left:110px;top:40px;">
 						<br>
 						<span>and crypto financial markets</span>
 						<!-- <svg role="img" class="icon icon-angle-double-right"><use xlink:href="icons/icons.svg#icon-angle-double-right"></use></svg> -->
@@ -413,971 +349,984 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</section>
 			<!-- / Secure -->
-
-
+		
+	
 			<!-- video -->
 			<section class="section section--center">
 				<div style="text-align:center; padding-top: 0px; padding-bottom: 70px"><iframe id="youtubeVideo" width="730" height="411" src="https://www.youtube.com/embed/DIHLPgfySpw" frameborder="0" allowfullscreen></iframe></div>
 			</section>
 			<!-- / video -->
 	
-			
-
-		<!-- CABS -->
-		<section class=" section--center section--cabs">
-			<div class="container">
-				<h1 class="section__title">What is a CABS token?</h1>
-
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="box box--fixed">
-							<div class="box__icon">
-								<!-- <svg role="img" class="icon icon-cabs1"><use xlink:href="icons/icons.svg#icon-cabs1"></use></svg> -->
-								<img src="images/06.gif" alt="" class="icon icon-cabs1" style="width:90px">
+	
+	
+			<!-- CABS -->
+			<section class=" section--center section--cabs">
+				<div class="container">
+					<h1 class="section__title">What is a CABS token?</h1>
+	
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="box box--fixed">
+								<div class="box__icon">
+									<!-- <svg role="img" class="icon icon-cabs1"><use xlink:href="icons/icons.svg#icon-cabs1"></use></svg> -->
+									<img src=" images/06.gif" alt="" class="icon icon-cabs1" style="width:90px">
+								</div>
+								<div class="box__content">
+									<h3 class="box__title">cabs token</h3>
+									<p>
+										An ERC-20 standard based Ethereum token. The only way to convert digital assets into crypto securities via CyberTrust securitisation platform. It is an access key & utility token.
+									</p>
+								</div>
 							</div>
-							<div class="box__content">
-								<h3 class="box__title">cabs token</h3>
-								<p>
-									An ERC-20 standard based Ethereum token. The only way to convert digital assets into crypto securities via CyberTrust securitisation platform. It is an access key & utility token.
-								</p>
+							<!-- <svg role="img" class="icon icon-plus"><use xlink:href="icons/icons.svg#icon-plus" ></use></svg> -->
+							<img src=" images/plus.svg" alt="" class="icon icon-plus">
+						</div>
+						<div class="col-sm-4">
+							<div class="box box--fixed">
+								<div class="box__icon">
+									<!-- <svg role="img" class="icon icon-cabs2"><use xlink:href="icons/icons.svg#icon-cabs2"></use></svg> -->
+									<img src=" images/05.gif" alt="" class="icon icon-cabs2">
+								</div>
+								<div class="box__content">
+									<h3 class="box__title">digital assets</h3>
+									<p>
+										Initially we will only work with Bitcoin, Ethereum and Bitcoin Cash. We plan to add the top 20 most liquid digital assets by end of 2018.
+									</p>
+								</div>
 							</div>
+							<!-- <svg role="img" class="icon icon-equal"><use xlink:href="icons/icons.svg#icon-equal"></use></svg> -->
+							<img src=" images/equal.svg" alt="" class="icon icon-equal">
 						</div>
-						<!-- <svg role="img" class="icon icon-plus"><use xlink:href="icons/icons.svg#icon-plus" ></use></svg> -->
-						<img src="images/plus.svg" alt="" class="icon icon-plus">
-					</div>
-					<div class="col-sm-4">
-						<div class="box box--fixed">
-							<div class="box__icon">
-								<!-- <svg role="img" class="icon icon-cabs2"><use xlink:href="icons/icons.svg#icon-cabs2"></use></svg> -->
-								<img src="images/05.gif" alt="" class="icon icon-cabs2">
-							</div>
-							<div class="box__content">
-								<h3 class="box__title">digital assets</h3>
-								<p>
-									Initially we will only work with Bitcoin, Ethereum and Bitcoin Cash. We plan to add the top 20 most liquid digital assets by end of 2018.
-								</p>
-							</div>
-						</div>
-						<!-- <svg role="img" class="icon icon-equal"><use xlink:href="icons/icons.svg#icon-equal"></use></svg> -->
-						<img src="images/equal.svg" alt="" class="icon icon-equal">
-					</div>
-					<div class="col-sm-4">
-						<div class="box box--fixed">
-							<div class="box__icon">
-								<!-- <svg role="img" class="icon icon-cabs3"><use xlink:href="icons/icons.svg#icon-cabs3"></use></svg> -->
-								<img src="images/04.gif" alt="" class="icon icon-cabs3"> 
-							</div>
-							<div class="box__content">
-								<h3 class="box__title">crypto derivative</h3>
-								<p>
-									Titled, auditable ownership. Clear tax implications. Risk-free clearing &amp; settlement. Robust security and storage.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section--center section--cabs">
-			<div class="container">
-				<h1 class="section__title current_title">Securitization Cost</h1>
-				<p class="text-center current_btc">BTC Price: $ <span id="getBTCJson">0</span></p>
-				<div class="current_content row">
-					<div class="col-md-5 col-sm-12 row current_special1">
-						<div class="col-md-4 col-sm-12" style="margin-top:5px;">
-							<img src="https://www.cybertrust.io/images/red-coin.png" alt="" class="red_coin">
-						</div>
-						<div class="current_txt" style="text-align:left;" class="col-md-8 col-m-12" >
-							<p style="color:#e90000;">By CyberTrust</p>
-							<h3>$ <span id="CTdata">0</span></h3>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-12">
-						<img src="images/arrow@2x.png" alt="" class="current_arrow">
-					</div>
-					<div class="col-md-5 col-sm-12 row current_special">
-						<div class="current_txt" style="text-align:right;" class="col-md-8 col-sm-12">
-							<p style="color:#808080">By other companies</p>
-							<h3>$ 4200</h3>
-						</div>
-						<div class="col-md-4 col-sm-12">
-							<img src="https://www.cybertrust.io/images/gray-coin.png" alt="" class="gray_coin">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- / CABS -->
-
-		<!-- What -->
-		<section class="section section--center">
-			<div class="container">
-				<h1 class="section__title mb-3">Why Do I Need a Crypto Derivative?</h1>
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="box">
-							<div class="box__icon">
-								<!-- <svg role="img" class="icon icon-safe"><use xlink:href="icons/icons.svg#icon-safe"></use></svg> -->
-								<img src="images/2-rectangle.svg" alt="" class="icon icon-safe">
-							</div>
-							<div class="box__content">
-								<h3 class="box__title">Hold Assets</h3>
-								<ul>
-									<li>Hassle-free, hyper security solution</li>
-									<li>Risk-free clearing &amp; settlement</li>
-									<li>Regulatory &amp; Judicial oversight</li>
-									<li>Clarity on tax impact</li>
-									<li>Titled ownership, ability to audit</li>
-									<li>Inheritable</li>
-								</ul>
+						<div class="col-sm-4">
+							<div class="box box--fixed">
+								<div class="box__icon">
+									<!-- <svg role="img" class="icon icon-cabs3"><use xlink:href="icons/icons.svg#icon-cabs3"></use></svg> -->
+									<img src=" images/04.gif" alt="" class="icon icon-cabs3">
+								</div>
+								<div class="box__content">
+									<h3 class="box__title">crypto derivative</h3>
+									<p>
+										Titled, auditable ownership. Clear tax implications. Risk-free clearing &amp; settlement. Robust security and storage.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-4">
-						<div class="box">
-							<div class="box__icon">
-								<img src="images/2-sell-icon.svg" alt="" class="icon icon-sell">
+			</section>
+			<section class="section--center section--cabs">
+				<div class="container">
+					<h1 class="section__title current_title">Securitization Cost</h1>
+					<p class="text-center current_btc">
+						<span>BTC Price: $ </span> 
+						<span id="getBTCJson">
+							<!-- <div class="loading">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div> -->
+						</span>
+					</p>
+					<div class="current_content row">
+						<div class="col-md-5 col-sm-12 row current_special1">
+							<div class="col-md-4 col-sm-12" style="margin-top:5px;">
+								<img src="https://www.cybertrust.io/images/red-coin.png" alt="" class="red_coin">
 							</div>
-							<div class="box__content">
-								<h3 class="box__title">Buy/Sell &amp; arbitrage</h3>
-								<ul>
-									<li>Arbitrage opportunity of price difference between crypto notes and raw crypto</li>
-									<li>Ability to settle in fiat inside traditional banking system</li>
-									<li>Inside KYC/AML regulatory framework</li>
-									<li>Clarity on tax impact</li>
-								</ul>
+							<div class="current_txt" style="text-align:left;" class="col-md-8 col-m-12">
+								<p style="color:#e90000;">By CyberTrust</p>
+								<h3>$ 
+									<span id="CTdata">
+										<div class="loading">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</span>
+								</h3>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="box">
-							<div class="box__icon">
-								<img src="images/2-derivative-icon.svg" alt="" class="icon icon-derivative">
+						<div class="col-md-2 col-sm-12">
+							<img src=" images/arrow@2x.png" alt="" class="current_arrow">
+						</div>
+						<div class="col-md-5 col-sm-12 row current_special">
+							<div class="current_txt" style="text-align:right;" class="col-md-8 col-sm-12">
+								<p style="color:#808080">By other companies</p>
+								<h3>$ 4200</h3>
 							</div>
-							<div class="box__content">
-								<h3 class="box__title">Create Financial Products</h3>
-								<ul>
-									<li>Earn profit on the sale or asset management of new financial products</li>
-									<li>Provide asset managers with hedge against risk of financial meltdown (tail-end risk hedging)</li>
-								</ul>
+							<div class="col-md-4 col-sm-12">
+								<img src="https://www.cybertrust.io/images/gray-coin.png" alt="" class="gray_coin">
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- / What -->
-
-
-		<!-- Partners -->
+			</section>
+			<!-- / CABS -->
+	
+			<!-- What -->
+			<section class="section section--center">
+				<div class="container">
+					<h1 class="section__title mb-3">Why Do I Need a Crypto Derivative?</h1>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="box">
+								<div class="box__icon">
+									<!-- <svg role="img" class="icon icon-safe"><use xlink:href="icons/icons.svg#icon-safe"></use></svg> -->
+									<img src=" images/2-rectangle.svg" alt="" class="icon icon-safe">
+								</div>
+								<div class="box__content">
+									<h3 class="box__title">Hold Assets</h3>
+									<ul>
+										<li>Hassle-free, hyper security solution</li>
+										<li>Risk-free clearing &amp; settlement</li>
+										<li>Regulatory &amp; Judicial oversight</li>
+										<li>Clarity on tax impact</li>
+										<li>Titled ownership, ability to audit</li>
+										<li>Inheritable</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="box">
+								<div class="box__icon">
+									<img src=" images/2-sell-icon.svg" alt="" class="icon icon-sell">
+								</div>
+								<div class="box__content">
+									<h3 class="box__title">Buy/Sell &amp; arbitrage</h3>
+									<ul>
+										<li>Arbitrage opportunity of price difference between crypto notes and raw crypto</li>
+										<li>Ability to settle in fiat inside traditional banking system</li>
+										<li>Inside KYC/AML regulatory framework</li>
+										<li>Clarity on tax impact</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="box">
+								<div class="box__icon">
+									<img src=" images/2-derivative-icon.svg" alt="" class="icon icon-derivative">
+								</div>
+								<div class="box__content">
+									<h3 class="box__title">Create Financial Products</h3>
+									<ul>
+										<li>Earn profit on the sale or asset management of new financial products</li>
+										<li>Provide asset managers with hedge against risk of financial meltdown (tail-end risk hedging)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- / What -->
+	
+	
+			<!-- Partners -->
 			<section class="section section--center">
 				<h1 class="section__title"><span>Media</span></h1>
 				<div class="container">
 					<div class="stack stack--shrink">
 						<a href="http://www.the-blockchain.com" target="_blank" class="stack__item">
-							<img src="images/partners-hero/blockchain-news.png" alt="BCN">
+							<img src=" images/partners-hero/blockchain-news.png" alt="BCN">
 						</a>
 						<a href="https://www.forbes.com/forbes/welcome/?toURL=https://www.forbes.com/sites/rogeraitken/2017/09/06/russian-chinese-cryptocurrency-alliance-launch-delayed-over-chinas-ico-hitch/&refURL=&referrer=" target="_blank" class="stack__item">
-							<img src="images/partners-hero/forbes.png" alt="Forbes">
+							<img src=" images/partners-hero/forbes.png" alt="Forbes">
 						</a>
 						<a href="https://www.paymentssource.com/news/as-china-mulls-icos-blockchain-leaders-turn-to-russia" target="_blank" class="stack__item">
-							<img src="images/partners-hero/paymentsource.png" alt="payment source">
+							<img src=" images/partners-hero/paymentsource.png" alt="payment source">
 						</a>
 						<a href="https://rb.ru" target="_blank" class="stack__item">
-							<img src="images/partners-hero/rusbase.png" alt="rusbase">
+							<img src=" images/partners-hero/rusbase.png" alt="rusbase">
 						</a>
 					</div>
 					<div class="stack stack--shrink">
 						<a href="http://www.the-blockchain.com/2017/09/06/united-strengths-china-russia-create-huge-powered-ecosystem-crypto-blockchain-innovations/" target="_blank" class="stack__item">
-							<img src="images/partners-hero/bnt.png" alt="the blockchain">
+							<img src=" images/partners-hero/bnt.png" alt="the blockchain">
 						</a>
 						<a href="http://www.ibtimes.com/why-blockchain-projects-struggle-work-banks-2608226" target="_blank" class="stack__item">
-							<img src="images/partners-hero/ibt1.png" alt="ibt">
+							<img src=" images/partners-hero/ibt1.png" alt="ibt">
 						</a>
 						<a href="https://steemkr.com/blockchain/@danizaharie/interview-with-evgeny-xata-ceo-of-cybertrust" target="_blank" class="stack__item">
-							<img src="images/partners-hero/steemit-1.png" alt="steemkr">
+							<img src=" images/partners-hero/steemit-1.png" alt="steemkr">
 						</a>
 						<a href="https://hype.codes/how-attract-institutional-investors-blockchain" target="_blank" class="stack__item">
-							<img src="images/partners-hero/hypecodes.png" alt="hype.codes">
+							<img src=" images/partners-hero/hypecodes.png" alt="hype.codes">
 						</a>
 					</div>
 					<div class="stack stack--shrink">
 						<a href="https://thenextweb.com/contributors/2017/11/16/digital-economy-continues-evolve-popularity-interest-grows/" target="_blank" class="stack__item">
-							<img src="images/partners-hero/tnw1.png" alt="thenextweb">
+							<img src=" images/partners-hero/tnw1.png" alt="thenextweb">
 						</a>
 						<a href="https://fr.investing.com/analysis/les-produits-financiers-numeriques-vontils-inonder-le-marche--200218628" target="_blank" class="stack__item">
-							<img src="images/partners-hero/investing.png" alt="investing.com">
+							<img src=" images/partners-hero/investing.png" alt="investing.com">
 						</a>
 						<a href="https://bitcointalk.org/index.php?topic=2271223.0" target="_blank" class="stack__item">
-							<img src="images/partners-hero/bitcointalk.png" alt="bitcointalk">
+							<img src=" images/partners-hero/bitcointalk.png" alt="bitcointalk">
 						</a>
+					</div>
+				</div>
+				</div>
+			</section>
+			<!-- / Partners -->
+	
+			<!-- Cybertrust Team -->
+			<section class="section">
+				<div class="container text-center">
+					<div class="team">
+						<h1 class="section__title team__title">CyberTrust Team</h1>
+						<div id="teambox" style="position: relative;">
+							<div class="row mb-3">
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__img">
+											<img src=" images/team/scott-freeman.png" alt="Scott Freeman">
+											<a href="http://www.linkedin.com/in/scott-freeman/" target="_blank" class="icon-wrap">
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+											</a>
+										</div>
+										<h3 class="profile__name">Scott Freeman</h3>
+										<small class="profile__position">CEO</small>
+									</div>
+									<div class="user-info">
+										<p> Lic. oec. Hochschule St. Gallen (Switzerland). Prior experience: Deutsche Bank, UBS, HP, Mercedes-Benz. Co-founded technology startup in China and built it into one of China's leading IT service providers. CEO of crypto
+											exchange C2CX.com, ranked in the top 30 exchanges worldwide in volume by coinmarkcap.com.</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__img">
+											<img src=" images/team/evgeny-xata.png" alt="Evgeny Xata">
+											<a href="http://www.linkedin.com/in/evgeny-xata-8b1b9816" target="_blank" class="icon-wrap">
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+											</a>
+										</div>
+										<h3 class="profile__name">Evgeny Xata</h3>
+										<small class="profile__position">Managing Director </small>
+									</div>
+									<div class="user-info">
+										<p>Oxford University (UK). Prior experience: The Boston Consulting Group, KPMG, Salomon Brothers. Helped to create and sell three ventures, including digital publishing, investment banking, and the energy sector. </p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__img">
+											<img src=" images/team/nick-lustiger.png" alt="Nick Lustiger">
+											<!-- <a href="http://www.linkedin.com" target="_blank" class="icon-wrap">
+										   <i class="icon icon-social-linkedin fa fa-linkedin"></i>
+										</a> -->
+										</div>
+										<h3 class="profile__name">Nick Lustiger</h3>
+										<small class="profile__position">Managing Director</small>
+									</div>
+									<div class="user-info">
+										<p> University of California (USA), Meiji University (Japan). Prior experience: Ernst & Young (USA), Kamchatnefteproduct (KNP) International, T8 Publishing group. Major ventures included restructuring and refinancing a
+											large enterprise in the Turkish energy sector, real estate development and securitisation in UK, as well as the creation, expansion and ultimate sale of KNP International, a vertically integrated oil trading company
+											in the Russian Far East with 300 staff and 400 €m in annual sales. </p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__img">
+											<img src=" images/team/Parker1.png" alt="Parker Fairfield">
+											<a href="http://www.linkedin.com/in/ParkerFairfield " target="_blank" class="icon-wrap">
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+											</a>
+										</div>
+										<h3 class="profile__name">Parker Fairfield</h3>
+										<small class="profile__position">Head of Operations</small>
+									</div>
+									<div class="user-info">
+										<p> University of Minnesota (US) & Sun-Yat Sen University (China) dual EMBA. 20+ years in China working in Strategy, IT, FinTech, & supply chain. Responsible for overseas support, content and a variety of other functions.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/pavel.png" alt="Pavel Shellydyaev">
+												<a href="https://www.linkedin.com/in/pavel-sheldyaev-1089834b/ " target="_blank" class="icon-wrap">
+													<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">Pavel Shelldyaev</h3>
+											<small class="profile__position">Full Stack Developer</small>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/james.png" alt="James Kehagias">
+												<a href="https://www.linkedin.com/in/jameskehagias/ " target="_blank" class="icon-wrap">
+													<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">James Kehagias</h3>
+											<small class="profile__position">Development Project Manager</small>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/dan_ye.png" alt="Dan Ye">
+												<!-- <a href="www.linkedin.com/in/danila-permyakov-5b5342141/" target="_blank" class="icon-wrap">
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+											</a> -->
+											</div>
+											<h3 class="profile__name">Dan YE</h3>
+											<small class="profile__position">Community Manager</small>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/kelvin_zheng.png" alt="Kelvin ZHENG">
+												<!-- <a href="https://www.linkedin.com/in/adam-yates-8244a012b/ " target="_blank" class="icon-wrap">
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+											</a> -->
+											</div>
+											<h3 class="profile__name">Kelvin Zheng</h3>
+											<small class="profile__position">PR Manager</small>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/dan1.png" alt="Dan P">
+												<!-- <a href="https://www.linkedin.com/in/adam-yates-8244a012b/ " target="_blank" class="icon-wrap">
+										   <i class="icon icon-social-linkedin fa fa-linkedin"></i>
+										</a> -->
+											</div>
+											<h3 class="profile__name">Dan P</h3>
+											<small class="profile__position">Head of Community</small>
+										</div>
+									</div>
+								</div>
+	
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/alan_wu.png" alt="Alan Wu">
+												<!-- <a href="https://www.linkedin.com/in/loooi/" target="_blank" class="icon-wrap">
+										   <i class="icon icon-social-linkedin fa fa-linkedin"></i>
+										</a> -->
+											</div>
+											<h3 class="profile__name">Alan Wu</h3>
+											<small class="profile__position">Event Manager</small>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/adam1.png" alt="Adam Yates">
+												<a href="https://www.linkedin.com/in/adam-yates-8244a012b/ " target="_blank" class="icon-wrap">
+													<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">Adam Yates</h3>
+											<small class="profile__position">Content Production</small>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/jason_ho.png" alt="Jason Ho">
+												<!-- <a href="https://www.linkedin.com/in/adam-yates-8244a012b/ " target="_blank" class="icon-wrap">
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+											</a> -->
+											</div>
+											<h3 class="profile__name">Jason HO</h3>
+											<small class="profile__position">Operations Manager</small>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row mb-3">
+								
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/axiang_wen.png" alt="Axiang WEN">
+												<!-- <a href="https://www.linkedin.com/in/adam-yates-8244a012b/ " target="_blank" class="icon-wrap">
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+											</a> -->
+											</div>
+											<h3 class="profile__name">Axiang Wen</h3>
+											<small class="profile__position">Content Manager</small>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/kirill.png" alt="Kirill Kazakov">
+												<a href="https://www.linkedin.com/in/kirill-kazakov-79400411" target="_blank" class="icon-wrap">
+													<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">Kirill Kazakov</h3>
+											<small class="profile__position">Project Management</small>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/artur.png" alt="Art Looi">
+												<a href="https://www.linkedin.com/in/loooi/" target="_blank" class="icon-wrap">
+													<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">Art Looi</h3>
+											<small class="profile__position">Graphic Designer</small>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h1 class="section__title"><span>Advisors</span></h1>
+							<div class="row">
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/tobias-seidl.png" alt="Tobias Seidl">
+												<a href="https://www.linkedin.com/in/tobias-seidl-a8637b12/" target="_blank" class="icon-wrap">
+												
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">Tobias Seidl</h3>
+											<small class="profile__position"></small>
+										</div>
+									</div>
+								</div> 
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/marat.png" alt="Marat Kichikov">
+												<a href="https://www.linkedin.com/in/mkichikov" target="_blank" class="icon-wrap">
+												
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">Marat Kichikov</h3>
+											<small class="profile__position"></small>
+										</div>
+									</div>
+								</div> 
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/bill.png" alt="Bill Delahunt">
+												<a href="https://www.wikipedia.org/wiki/Bill_Delahunt" target="_blank" class="icon-wrap">
+												
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">Bill Delahunt</h3>
+											<small class="profile__position"></small>
+										</div>
+									</div>
+								</div> 
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img" style="margin-bottom:28px;">
+												<img src=" images/team/david_g.png" alt="David Gorodyansky">
+												<a href="www.linkedin.com/in/davidgorodyansky/" target="_blank" class="icon-wrap">
+													<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">David Gorodyansky</h3>
+											<small class="profile__position"></small>
+										</div>
+									</div>
+								</div> 
+							</div>
+							<h1 class="section__title"><span></span></h1>
+							<div class="row">
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src=" images/team/jen.png" alt="Tobias Seidl">
+												<a href="https://www.linkedin.com/in/cryptojen/" target="_blank" class="icon-wrap">
+												
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">Jen Buakaew</h3>
+											<small class="profile__position"></small>
+										</div>
+									</div>
+								</div> 
+								<!-- <div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src="images/team/marat.png" alt="Marat Kichikov">
+												<a href="www.linkedin.com/in/mkichikov" target="_blank" class="icon-wrap">
+												
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">Marat Kichikov</h3>
+											<small class="profile__position"></small>
+										</div>
+									</div>
+								</div> 
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img">
+												<img src="images/team/bill.png" alt="Bill Delahunt">
+												<a href="www.wikipedia.org/wiki/Bill_Delahunt" target="_blank" class="icon-wrap">
+												
+												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">Bill Delahunt</h3>
+											<small class="profile__position"></small>
+										</div>
+									</div>
+								</div> 
+								<div class="col-sm-6 col-md-3">
+									<div class="profile">
+										<div class="profile__info">
+											<div class="profile__img" style="margin-bottom:5px;">
+												<img src="images/team/david_g.png" alt="David Gorodyansky">
+												<a href="www.linkedin.com/in/davidgorodyansky/" target="_blank" class="icon-wrap">
+													<i class="icon icon-social-linkedin fa fa-linkedin"></i>
+												</a>
+											</div>
+											<h3 class="profile__name">David Gorodyansky</h3>
+											<small class="profile__position"></small>
+										</div>
+									</div>
+								</div> --> 
+							</div>
+						</div>
+	
+	
+	
+						
+					
+	
+						<div class="introduceInfo" id="introduceInfo">
+							<!-- 1 -->
+	
+							<div class="b-people__item j-active__item" style="display: none;">
+								<div class="b-people__main-info-wrapper">
+									<div class="b-people__avatar">
+										<img src=" images/team/scott-freeman.png" alt="Scott Freeman">
+									</div>
+									<div class="b-people__name">Scott Freeman</div>
+									<div class="b-people__position">CEO</div>
+									<!-- <a href="" class="b-people__link">
+											<img src=" icon/linked-in-13d2506459dc427fa7fb0eb4b18a1653aa69b9b0a9a18acb809dc47b8cb2c187.png" alt="Linked in">
+										</a> -->
+								</div>
+								<div class="b-people__annotation"> Lic. oec. Hochschule St. Gallen (Switzerland). Prior experience: Deutsche Bank, UBS, HP, Mercedes-Benz. Co-founded technology startup in China and built it into one of China's leading IT service providers. CEO of crypto exchange
+									C2CX.com, ranked in the top 30 exchanges worldwide in volume by coinmarkcap.com.</div>
+								<div class="b-people__close-info"></div>
+							</div>
+	
+	
+	
+	
+							<!-- 2 -->
+							<div class="b-people__item j-active__item" style="display: none;">
+								<div class="b-people__main-info-wrapper">
+									<div class="b-people__avatar">
+										<img src=" images/team/evgeny-xata.png" alt="Evgeny Xata">
+									</div>
+									<div class="b-people__name">Evgeny Xata</div>
+									<div class="b-people__position">Managing Director</div>
+									<!-- <a href="" class="b-people__link">
+										</a>  -->
+								</div>
+								<div class="b-people__annotation"> Oxford University (UK). Prior experience: The Boston Consulting Group, KPMG, Salomon Brothers. Helped to create and sell three ventures, including digital publishing, investment banking, and the energy sector. </div>
+								<div class="b-people__close-info"></div>
+							</div>
+	
+	
+							<!-- 3 -->
+							<div class="b-people__item j-active__item" style="display: none;">
+								<div class="b-people__main-info-wrapper">
+									<div class="b-people__avatar">
+										<img src=" images/team/nick-lustiger.png" alt="Nick Lustiger">
+									</div>
+									<div class="b-people__name">Nick Lustiger</div>
+									<div class="b-people__position">Head of Institutional Sales</div>
+									<!-- <a href="" class="b-people__link">
+											<img src=" icon/linked-in-13d2506459dc427fa7fb0eb4b18a1653aa69b9b0a9a18acb809dc47b8cb2c187.png" alt="Linked in">
+										</a> -->
+								</div>
+								<div class="b-people__annotation"> University of&nbsp;California (USA), Meiji University (Japan). Prior experience: Ernst &amp; Young (USA), Kamchatnefteproduct (KNP) International, T8 Publishing group. Major ventures included restructuring and refinancing a&nbsp;large
+									enterprise in&nbsp;the Turkish energy sector, real estate development and securitisation in&nbsp;UK, as&nbsp;well as&nbsp;the creation, expansion and ultimate sale of&nbsp;KNP International, a&nbsp;vertically integrated
+									oil trading company in&nbsp;the Russian Far East with 300 staff and 400&nbsp;€m in&nbsp;annual sales. </div>
+								<div class="b-people__close-info"></div>
+							</div>
+							<!-- 4  -->
+							<div class="b-people__item j-active__item" style="display: none;">
+								<div class="b-people__main-info-wrapper">
+									<div class="b-people__avatar">
+										<img src=" images/team/Parker1.png" alt="Evgeny Xata">
+									</div>
+									<div class="b-people__name">Parker Fairfield</div>
+									<div class="b-people__position">Head of Operations</div>
+	
+								</div>
+								<div class="b-people__annotation"> University of Minnesota (US) & Sun-Yat Sen University (China) dual EMBA. 20+ years in China working in Strategy, IT, FinTech, & supply chain. Responsible for overseas support, content and a variety of other functions.</div>
+								<div class="b-people__close-info"></div>
+							</div>
+						</div>
+					</div>
+	
+	
+	
+	
+	
+	
+	
+			</section>
+			<!-- / Cybertrust Team -->
+	
+			<!-- Product Partners -->
+			<section class="section section--lg">
+				<div class="container text-center">
+					<h1 class="section__title"><span>Product Partners</span></h1>
+					<div class="stack">
+						<!-- <a href="https://hoganlovells.com" target="_blank"><img src=" images/partners/hogan-lovells.png" alt="Hogan Lovells" class="stack__item"></a> -->
+						<!-- <a href="http://www.arendt.com" target="_blank"><img src=" images/partners/arendt.png" alt="Arendt" class="stack__item"></a> -->
+						<!-- <a href="https://creatrust.com" target="_blank"><img src=" images/partners/creatrust.png" alt="Creatrust" class="stack__item"></a> -->
+						<a href="https://www.bancor.network/" target="_blank"><img src=" images/partners/bancor_logo_dark.png" alt="xapo" class="stack__item"></a>
+						<a href="http://ey.com" target="_blank"><img src=" images/partners/ey.png" alt="EY" class="stack__item"></a>
+						<a href="https://xapo.com" target="_blank"><img src=" images/partners/xapo.png" alt="xapo" class="stack__item"></a>
+					</div>
+	
+					<div class="stack">
+						<a href="http://www.amazix.com" target="_blank"> <img src=" images/partners/amazix.png" alt="amazix" class="stack__item"></a>
+						<a href="https://www.wings.ai" target="_blank"><img src=" images/partners/wings.png" alt="EY" class="stack__item"></a>
+						<a href="https://www.mme.ch" target="_blank"><img src=" images/partners/mme.png" alt="MME" class="stack__item"></a>
+					</div>
+				</div>
+			</section>
+			<!-- / Product Partners -->
+	
+	
+	
+	
+	
+			<!-- Cases -->
+			<section class="section section--center">
+				<div class="container">
+					<h1 class="section__title mb-3">Use Cases</h1>
+	
+					<div class="row">
+						<div class="col-sm-4 d-flex">
+							<div class="block">
+								<dl class="block__money">
+									<dt>Undisclosed Middle Eastern sovereign wealth fund</dt>
+									<dd>$50,000,000</dd>
+								</dl>
+	
+								<span class="hr-diamonds"><b></b></span>
+	
+								<p>US Treasury bills, synthetically structured in BTC terms</p>
+							</div>
+						</div>
+						<div class="col-sm-4 d-flex">
+							<div class="block">
+								<dl class="block__money">
+									<dt>Paris-based hedge fund</dt>
+									<dd>$20,000,000</dd>
+								</dl>
+	
+								<span class="hr-diamonds"><b></b></span>
+	
+								<p>Amazon stock synthetically structured in ETH terms</p>
+							</div>
+						</div>
+						<div class="col-sm-4 d-flex">
+							<div class="block">
+								<dl class="block__money">
+									<dt>Undisclosed family office</dt>
+									<dd>$10,000,000</dd>
+								</dl>
+	
+								<span class="hr-diamonds"><b></b></span>
+	
+								<p>Google stock in BCH terms</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- / Partners -->
-		
-		<!-- Cybertrust Team -->
-		<section class="section">
-			<div class="container text-center">
-				<div class="team">
-					<h1 class="section__title team__title">CyberTrust Team</h1>
-					<div id="teambox" style="position: relative;">
-					<div class="row mb-3">
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__img">
-									<img src="images/team/scott-freeman.png" alt="Scott Freeman">
-									<a href="http://www.linkedin.com/in/scott-freeman/" target="_blank" class="icon-wrap">
-									   <i class="icon icon-social-linkedin fa fa-linkedin"></i>
-									</a>
-								</div>
-								<h3 class="profile__name">Scott Freeman</h3>
-								<small class="profile__position">CEO</small>
-							</div>
-							<div class="user-info">
-								<p> Lic. oec. Hochschule St. Gallen (Switzerland). Prior experience: Deutsche Bank, UBS, HP, Mercedes-Benz. Co-founded technology startup in China and built it into one of China's leading IT service providers. CEO of crypto exchange C2CX.com, ranked in the top 30 exchanges worldwide in volume by coinmarkcap.com.</p>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__img">
-									<img src="images/team/evgeny-xata.png" alt="Evgeny Xata">
-									<a href="http://www.linkedin.com/in/evgeny-xata-8b1b9816" target="_blank" class="icon-wrap">
-									   <i class="icon icon-social-linkedin fa fa-linkedin"></i>
-									</a>
-								</div>
-								<h3 class="profile__name">Evgeny Xata</h3>
-								<small class="profile__position">Managing Director </small>
-							</div>
-							<div class="user-info">
-								<p>Oxford University (UK). Prior experience: The Boston Consulting Group, KPMG, Salomon Brothers. Helped to create and sell three ventures, including digital publishing, investment banking, and the energy sector. </p>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__img">
-									<img src="images/team/nick-lustiger.png" alt="Nick Lustiger">
-									<!-- <a href="http://www.linkedin.com" target="_blank" class="icon-wrap">
-									   <i class="icon icon-social-linkedin fa fa-linkedin"></i>
-									</a> -->
-								</div>
-								<h3 class="profile__name">Nick Lustiger</h3>
-								<small class="profile__position">Managing Director</small>
-							</div>
-							<div class="user-info">
-								<p>  University of California (USA), Meiji University (Japan). Prior experience: Ernst & Young (USA), Kamchatnefteproduct (KNP) International, T8 Publishing group. Major ventures included restructuring and refinancing a large enterprise
-				                in the Turkish energy sector, real estate development and securitisation in UK, as well as the creation, expansion and ultimate sale of KNP International, a vertically integrated oil trading company in the Russian Far East with 300 staff and 400 €m in annual sales.  </p>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__img">
-									<img src="images/team/Parker1.png" alt="Parker Fairfield">
-									<a href="http://www.linkedin.com/in/ParkerFairfield " target="_blank" class="icon-wrap">
-									   <i class="icon icon-social-linkedin fa fa-linkedin"></i>
-									</a>
-								</div> 
-								<h3 class="profile__name">Parker Fairfield</h3>
-								<small class="profile__position">Head of Operations</small>
-							</div>
-							<div class="user-info">
-								<p> University of Minnesota (US) & Sun-Yat Sen University (China) dual EMBA. 20+ years in China working in Strategy, IT, FinTech, & supply chain. Responsible for overseas support, content and a variety of other functions.</p>
-							</div>
-						</div>
-					 </div>
-					<div class="row mb-3">
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-									<div class="profile__img">
-										<img src="images/team/Evgeniya.png" alt="Evgeniya Gubar">
-										<a href="https://www.linkedin.com/in/evgeniya-gubar-56b34a4a/" target="_blank" class="icon-wrap">
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-										</a>
-									</div> 
-									<h3 class="profile__name">Evgeniya Gubar</h3>
-									<small class="profile__position">Head of Legal & Compliance</small>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-									<div class="profile__img">
-										<img src="images/team/pavel.png" alt="Pavel Shellydyaev">
-										<a href="https://www.linkedin.com/in/pavel-sheldyaev-1089834b/ " target="_blank" class="icon-wrap">
-										<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-										</a>
-									</div> 
-									<h3 class="profile__name">Pavel Shelldyaev</h3>
-									<small class="profile__position">Full Stack Developer</small>
-								</div>
-							</div>
-						</div> 
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-									<div class="profile__img">
-										<img src="images/team/james.png" alt="James Kehagias">
-										<a href="https://www.linkedin.com/in/jameskehagias/ " target="_blank" class="icon-wrap">
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-										</a>
-									</div> 
-									<h3 class="profile__name">James Kehagias</h3>
-									<small class="profile__position">Web Development Project Manager</small>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-									<div class="profile__img">
-										<img src="images/team/dan_ye.png" alt="Dan Ye">
-										<!-- <a href="www.linkedin.com/in/danila-permyakov-5b5342141/" target="_blank" class="icon-wrap">
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-										</a> -->
-									</div> 
-									<h3 class="profile__name">Dan YE</h3>
-									<small class="profile__position">Community Manager</small>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row mb-3">
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-									<div class="profile__img">
-										<img src="images/team/kelvin_zheng.png" alt="Kelvin ZHENG">
-										<!-- <a href="https://www.linkedin.com/in/adam-yates-8244a012b/ " target="_blank" class="icon-wrap">
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-										</a> -->
-									</div> 
-									<h3 class="profile__name">Kelvin Zheng</h3>
-									<small class="profile__position">PR Manager</small>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-								<div class="profile__img">
-									<img src="images/team/dan1.png" alt="Dan P">
-									<!-- <a href="https://www.linkedin.com/in/adam-yates-8244a012b/ " target="_blank" class="icon-wrap">
-									   <i class="icon icon-social-linkedin fa fa-linkedin"></i>
-									</a> -->
-								</div> 
-									<h3 class="profile__name">Dan P</h3>
-									<small class="profile__position">Head of Community</small>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-								<div class="profile__img">
-									<img src="images/team/alan_wu.png" alt="Alan Wu">
-									<!-- <a href="https://www.linkedin.com/in/loooi/" target="_blank" class="icon-wrap">
-									   <i class="icon icon-social-linkedin fa fa-linkedin"></i>
-									</a> -->
-								</div>
-									<h3 class="profile__name">Alan Wu</h3>
-									<small class="profile__position">Event Manager</small>
-								</div>
-							</div>
-						</div> 
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-								<div class="profile__img">
-									<img src="images/team/adam1.png" alt="Adam Yates">
-									<a href="https://www.linkedin.com/in/adam-yates-8244a012b/ " target="_blank" class="icon-wrap">
-									   <i class="icon icon-social-linkedin fa fa-linkedin"></i>
-									</a>
-								</div> 
-									<h3 class="profile__name">Adam Yates</h3>
-									<small class="profile__position">Content Production</small>
-								</div>
-							</div>
-						</div>
-					</div>	
-					<div class="row mb-3">
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-									<div class="profile__img">
-										<img src="images/team/jason_ho.png" alt="Jason Ho">
-										<!-- <a href="https://www.linkedin.com/in/adam-yates-8244a012b/ " target="_blank" class="icon-wrap">
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-										</a> -->
-									</div> 
-									<h3 class="profile__name">Jason HO</h3>
-									<small class="profile__position">Operations Manager</small>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-									<div class="profile__img">
-										<img src="images/team/axiang_wen.png" alt="Axiang WEN">
-										<!-- <a href="https://www.linkedin.com/in/adam-yates-8244a012b/ " target="_blank" class="icon-wrap">
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-										</a> -->
-									</div> 
-									<h3 class="profile__name">Axiang Wen</h3>
-									<small class="profile__position">Content Manager</small>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-									<div class="profile__img">
-										<img src="images/team/kirill.png" alt="Kirill Kazakov">
-										<a href="https://www.linkedin.com/in/kirill-kazakov-79400411" target="_blank" class="icon-wrap">
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-										</a>
-									</div>
-									<h3 class="profile__name">Kirill Kazakov</h3>
-									<small class="profile__position">Project Management</small>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="profile">
-								<div class="profile__info">
-								<div class="profile__img">
-									<img src="images/team/artur.png" alt="Art Looi">
-									<a href="https://www.linkedin.com/in/loooi/" target="_blank" class="icon-wrap">
-									   <i class="icon icon-social-linkedin fa fa-linkedin"></i>
-									</a>
-								</div>
-									<h3 class="profile__name">Art Looi</h3>
-									<small class="profile__position">Graphic Designer</small>
-								</div>
-							</div>
-						</div> 
-					</div>		
-						<h1 class="section__title"><span>Advisors</span></h1>
-						<div class="row">
-							<div class="col-sm-6 col-md-3">
-								<div class="profile">
-									<div class="profile__info">
-										<div class="profile__img">
-											<img src="images/team/tobias-seidl.png" alt="Tobias Seidl">
-											<a href="https://www.linkedin.com/in/tobias-seidl-a8637b12/" target="_blank" class="icon-wrap">
-											
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-											</a>
-										</div>
-										<h3 class="profile__name">Tobias Seidl</h3>
-										<small class="profile__position"></small>
-									</div>
-								</div>
-							</div> 
-							<div class="col-sm-6 col-md-3">
-								<div class="profile">
-									<div class="profile__info">
-										<div class="profile__img">
-											<img src="images/team/marat.png" alt="Marat Kichikov">
-											<a href="https://www.linkedin.com/in/mkichikov" target="_blank" class="icon-wrap">
-											
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-											</a>
-										</div>
-										<h3 class="profile__name">Marat Kichikov</h3>
-										<small class="profile__position"></small>
-									</div>
-								</div>
-							</div> 
-							<div class="col-sm-6 col-md-3">
-								<div class="profile">
-									<div class="profile__info">
-										<div class="profile__img">
-											<img src="images/team/bill.png" alt="Bill Delahunt">
-											<a href="https://www.wikipedia.org/wiki/Bill_Delahunt" target="_blank" class="icon-wrap">
-											
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-											</a>
-										</div>
-										<h3 class="profile__name">Bill Delahunt</h3>
-										<small class="profile__position"></small>
-									</div>
-								</div>
-							</div> 
-							<div class="col-sm-6 col-md-3">
-								<div class="profile">
-									<div class="profile__info">
-										<div class="profile__img" style="margin-bottom:28px;">
-											<img src="images/team/david_g.png" alt="David Gorodyansky">
-											<a href="www.linkedin.com/in/davidgorodyansky/" target="_blank" class="icon-wrap">
-												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-											</a>
-										</div>
-										<h3 class="profile__name">David Gorodyansky</h3>
-										<small class="profile__position"></small>
-									</div>
-								</div>
-							</div> 
-						</div>
-					</div>
-					<h1 class="section__title"><span></span></h1>
-						<div class="row">
-							<div class="col-sm-6 col-md-3">
-								<div class="profile">
-									<div class="profile__info">
-										<div class="profile__img">
-											<img src="images/team/jen.png" alt="Tobias Seidl">
-											<a href="https://www.linkedin.com/in/cryptojen/" target="_blank" class="icon-wrap">
-											
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-											</a>
-										</div>
-										<h3 class="profile__name">Jen Buakaew</h3>
-										<small class="profile__position"></small>
-									</div>
-								</div>
-							</div> 
-							<!-- <div class="col-sm-6 col-md-3">
-								<div class="profile">
-									<div class="profile__info">
-										<div class="profile__img">
-											<img src="images/team/marat.png" alt="Marat Kichikov">
-											<a href="www.linkedin.com/in/mkichikov" target="_blank" class="icon-wrap">
-											
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-											</a>
-										</div>
-										<h3 class="profile__name">Marat Kichikov</h3>
-										<small class="profile__position"></small>
-									</div>
-								</div>
-							</div> 
-							<div class="col-sm-6 col-md-3">
-								<div class="profile">
-									<div class="profile__info">
-										<div class="profile__img">
-											<img src="images/team/bill.png" alt="Bill Delahunt">
-											<a href="www.wikipedia.org/wiki/Bill_Delahunt" target="_blank" class="icon-wrap">
-											
-											<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-											</a>
-										</div>
-										<h3 class="profile__name">Bill Delahunt</h3>
-										<small class="profile__position"></small>
-									</div>
-								</div>
-							</div> 
-							<div class="col-sm-6 col-md-3">
-								<div class="profile">
-									<div class="profile__info">
-										<div class="profile__img" style="margin-bottom:5px;">
-											<img src="images/team/david_g.png" alt="David Gorodyansky">
-											<a href="www.linkedin.com/in/davidgorodyansky/" target="_blank" class="icon-wrap">
-												<i class="icon icon-social-linkedin fa fa-linkedin"></i>
-											</a>
-										</div>
-										<h3 class="profile__name">David Gorodyansky</h3>
-										<small class="profile__position"></small>
-									</div>
-								</div>
-							</div> --> 
-						</div>
-					</div>
-
-
-
-
-
-					<div class="introduceInfo" id="introduceInfo">
-						<!-- 1 -->
-
-						<div class="b-people__item j-active__item" style="display: none;">
-            				<div class="b-people__main-info-wrapper">
-				                <div class="b-people__avatar">
-				                    <img src="images/team/scott-freeman.png" alt="Scott Freeman">
-				                </div>
-                				<div class="b-people__name">Scott Freeman</div>
-                				<div class="b-people__position">CEO</div>
-				               <!-- <a href="" class="b-people__link">
-				                    <img src="assets/icon/linked-in-13d2506459dc427fa7fb0eb4b18a1653aa69b9b0a9a18acb809dc47b8cb2c187.png" alt="Linked in">
-				                </a> -->
-            				</div>
-				            <div class="b-people__annotation"> Lic. oec. Hochschule St. Gallen (Switzerland). Prior experience: Deutsche Bank, UBS, HP, Mercedes-Benz. Co-founded technology startup in China and built it into one of China's leading IT service providers. CEO of crypto exchange C2CX.com, ranked in the top 30 exchanges worldwide in volume by coinmarkcap.com.</div>
-            				<div class="b-people__close-info"></div>
-        				</div>
-
-						
-						
-
-						<!-- 2 -->
-						<div class="b-people__item j-active__item" style="display: none;">
-            				<div class="b-people__main-info-wrapper">
-				                <div class="b-people__avatar">
-				                    <img src="images/team/evgeny-xata.png" alt="Evgeny Xata">
-				                </div>
-                				<div class="b-people__name">Evgeny Xata</div>
-                				<div class="b-people__position">Managing Director</div>
-				                <!-- <a href="" class="b-people__link">
-				                </a>  -->
-            				</div>
-				            <div class="b-people__annotation"> Oxford University (UK). Prior experience: The Boston Consulting Group, KPMG, Salomon Brothers. Helped to create and sell three ventures, including digital publishing, investment banking, and the energy sector. </div>
-            				<div class="b-people__close-info"></div>
-        				</div>
-
-						
-        				<!-- 3 -->
-        				<div class="b-people__item j-active__item" style="display: none;">
-            				<div class="b-people__main-info-wrapper">
-				                <div class="b-people__avatar">
-				                    <img src="images/team/nick-lustiger.png" alt="Nick Lustiger">
-				                </div>
-                				<div class="b-people__name">Nick Lustiger</div>
-                				<div class="b-people__position">Head of Institutional Sales</div>
-				                <!-- <a href="" class="b-people__link">
-				                    <img src="assets/icon/linked-in-13d2506459dc427fa7fb0eb4b18a1653aa69b9b0a9a18acb809dc47b8cb2c187.png" alt="Linked in">
-				                </a> -->
-            				</div>
-				            <div class="b-people__annotation">  University of&nbsp;California (USA), Meiji University (Japan). Prior experience: Ernst &amp; Young (USA), Kamchatnefteproduct (KNP) International, T8 Publishing group. Major ventures included restructuring and refinancing a&nbsp;large enterprise
-                in&nbsp;the Turkish energy sector, real estate development and securitisation in&nbsp;UK, as&nbsp;well as&nbsp;the creation, expansion and ultimate sale of&nbsp;KNP International, a&nbsp;vertically integrated oil trading company in&nbsp;the Russian Far East
-                with 300 staff and 400&nbsp;€m in&nbsp;annual sales.  </div>
-            				<div class="b-people__close-info"></div>
-        				</div>
-        				<!-- 4  -->
-        				<div class="b-people__item j-active__item" style="display: none;">
-            				<div class="b-people__main-info-wrapper">
-				                <div class="b-people__avatar">
-				                    <img src="images/team/Parker1.png" alt="Evgeny Xata">
-				                </div>
-                				<div class="b-people__name">Parker Fairfield</div>
-                				<div class="b-people__position">Head of Operations</div>
-				                
-            				</div>
-				            <div class="b-people__annotation"> University of Minnesota (US) & Sun-Yat Sen University (China) dual EMBA. 20+ years in China working in Strategy, IT, FinTech, & supply chain. Responsible for overseas support, content and a variety of other functions.</div>
-            				<div class="b-people__close-info"></div>
-        				</div>
-        		
-		</section> 
-		<!-- / Cybertrust Team -->
-
-		<!-- Product Partners -->
-		<section class="section section--lg">
-			<div class="container text-center">
-				<h1 class="section__title"><span>Product Partners</span></h1>
-				<div class="stack">
-					<a href="https://hoganlovells.com" target="_blank"><img src="images/partners/hogan-lovells.png" alt="Hogan Lovells" class="stack__item"></a>
-					<a href="http://www.arendt.com" target="_blank"><img src="images/partners/arendt.png" alt="Arendt" class="stack__item"></a>
-					<!-- <a href="https://creatrust.com" target="_blank"><img src="images/partners/creatrust.png" alt="Creatrust" class="stack__item"></a> -->
-					<a href="https://www.bancor.network/" target="_blank"><img src="images/partners/bancor_logo_dark.png" alt="xapo" class="stack__item"></a>
-					<a href="http://ey.com" target="_blank"><img src="images/partners/ey.png" alt="EY" class="stack__item"></a>
-					</div>
-					
-					<div class="stack">
-					
-					<a href="https://xapo.com" target="_blank"><img src="images/partners/xapo.png" alt="xapo" class="stack__item"></a>
-
-					<a href="http://www.amazix.com" target="_blank"> <img src="images/partners/amazix.png" alt="amazix"  class="stack__item"></a>
-					<a href="https://www.wings.ai" target="_blank"><img src="images/partners/wings.png" alt="EY" class="stack__item"></a>
-					<a href="https://www.mme.ch" target="_blank"><img src="images/partners/mme.png" alt="MME" class="stack__item"></a>
-				</div>
-			</div>
-		</section>
-		<!-- / Product Partners -->
-
-
-
-
-
-		<!-- Cases -->
-		<section class="section section--center">
-			<div class="container">
-				<h1 class="section__title mb-3">Use Cases</h1>
-
-				<div class="row">
-					<div class="col-sm-4 d-flex">
-						<div class="block">
-							<dl class="block__money">
-							<dt>Undisclosed Middle Eastern sovereign wealth fund</dt>
-								<dd>$50,000,000</dd>
-							</dl>
-
-							<span class="hr-diamonds"><b></b></span>
-
-							<p>US Treasury bills, synthetically structured in BTC terms</p>
-						</div>
-					</div>
-					<div class="col-sm-4 d-flex">
-						<div class="block">
-							<dl class="block__money">
-								<dt>Paris-based hedge fund</dt>
-								<dd>$20,000,000</dd>
-							</dl>
-
-							<span class="hr-diamonds"><b></b></span>
-
-							<p>Amazon stock synthetically structured in ETH terms</p>
-						</div>
-					</div>
-					<div class="col-sm-4 d-flex">
-						<div class="block">
-							<dl class="block__money">
-								<dt>Undisclosed family office</dt>
-								<dd>$10,000,000</dd>
-							</dl>
-
-							<span class="hr-diamonds"><b></b></span>
-
-							<p>Google stock in BCH terms</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- / Cases -->
-
-		<!-- Roadmap -->
-		<section class="section text-center" style="background-image: url('images/bgr-roadmap.jpg');">
-			<div class="container container--sm">
-				<h1 class="section__title mb-3"><span>Roadmap</span></h1>
-
-				<div class="roadmap">
-					<div class="roadmap__wrap">
-						<div class="roadmap__item">
-							<h3 class="roadmap__title">September 2014</h3>
-							<p>
-								CyberTrust S.A. set up in Luxembourg
-							</p>
-						</div>
-					</div>
-					<div class="roadmap__wrap">
-						<div class="roadmap__item">
-							<h3 class="roadmap__title">July 2016</h3>
-							<p>
-								Crypto investment fund project triggered by Ethereum investment opportunity.
-							</p>
-						</div>
-					</div>
-					<div class="roadmap__wrap">
-						<div class="roadmap__item">
-							<h3 class="roadmap__title">April 2017</h3>
-							<p>
-								Fund structure abandoned due to legal issues. Project restructured to direct securitisation instead.
-							</p>
-						</div>
-					</div>
-					<div class="roadmap__wrap">
-						<div class="roadmap__item">
-							<h3 class="roadmap__title">May 2017</h3>
-							<p>
-								Legal template for securitisation finalised.
-							</p>
-						</div>
-					</div>
-					<div class="roadmap__wrap">
-						<div class="roadmap__item">
-							<h3 class="roadmap__title">June 2017</h3>
-							<p>
-								Pass-through tax structure via Dutch Foundations created.
-							</p>
-						</div>
-					</div>
-					<div class="roadmap__wrap">
-						<div class="roadmap__item">
-							<h3 class="roadmap__title">July 2017</h3>
-							<p>
-								Signed mandate with SPV Administrator.
-							</p>
-						</div>
-					</div>
-					<div class="roadmap__wrap">
-						<div class="roadmap__item">
-							<h3 class="roadmap__title">August 2017</h3>
-							<p>
-								Engagement letter signed to appoint Ernst & Young as auditor.
-							</p>
-						</div>
-					</div>
-					<div class="roadmap__wrap roadmap__wrap--lg">
-						<div class="roadmap__item roadmap__item--important roadmap__item--red">
-							<span class="pointer"></span>
-							<h3 class="roadmap__title">November 2017</h3>
-							<p>
-								Initial Token Offering Closed Round & Pre-ICO
-							</p>
-						</div>
-					</div>
-
-					<div class="roadmap__wrap">
-						<div class="roadmap__item">
-							<h3 class="roadmap__title">December 2017</h3>
-							<p>
-								Initial Token Offering 
-							</p>
-						</div>
-					</div>
-
-					<div class="roadmap__wrap">
-						<div class="roadmap__item">
-							<h3 class="roadmap__title">January 2018</h3>
-							<p>
-								CABS token lists on C2CX and other major crypto exchanges.
-							</p>
-						</div>
-					</div>
-
-					
-					
-					<div class="roadmap__wrap roadmap__wrap--lg">
-						<div class="roadmap__item roadmap__item--important roadmap__item--lg">
-							<span class="pointer"></span>
-							<h3 class="roadmap__title">Q2 2018</h3>
-							<p>
-								BTC, ETH and BCC/BCH Global Crypto Notes are approved for clearing & settlement via regulated bank acting as paying agent and are listed on OTC markets worldwide.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- / Roadmap -->
-
- 		<div class="buttons-wrap">
-			<a type="button" class="btn btn--lg btn--round btn-danger Participatenow" href='https://ico.cybertrust.io/in/Register' target='_blank' >Join the ICO</a>
-		</div>
-
-
-		<!-- Community -->
-		<section class="section">
-			<div class="container">
-				<div class="community">
-					<h3 class="community__title">Join our communities</h3 class="h3">
-					<div class="community__wrap">
-						<a href="http://t.me/cybertrustbank" class="community__item">
-							<i class="icon-wrap">
-								<i class="fa fa-paper-plane icon icon-social-telegram"> </i>
-							<!-- <svg role="img" class="icon icon-social-telegram"><use xlink:href="icons/icons.svg#icon-social-telegram"></use></svg> -->
-							</i>
-				            <span>Telegram</span>
-				        </a>
-				        <a href="https://medium.com/cybertrustbank" class="community__item">
-							<i class="icon-wrap">
-							<!-- <svg role="img" class="icon icon-social-medium"><use xlink:href="icons/icons.svg#icon-social-medium"></use></svg> -->
-							<i class="fa fa-medium icon icon-social-medium"> </i>
-							</i>
-				            <span>Medium</span>
-				        </a>
-				        <a href="https://twitter.com/cybertrustbank" class="community__item">
-							<i class="icon-wrap">
-							<i class="fa fa-twitter icon icon-social-medium"> </i>
-							</i>
-				            <span>Twitter</span>
-				        </a>
-				        <a href="https://www.facebook.com/cybertrustbank" class="community__item">
-							<i class="icon-wrap">
-							<i class="fa fa-facebook icon icon-social-medium"> </i>
-							</i>
-				            <span>Facebook</span>
-				        </a>
-				        <a href="https://www.reddit.com/r/CyberTrust/" class="community__item">
-							<i class="icon-wrap">
-							<i class="fa fa-reddit icon icon-social-medium"> </i>
-							</i>
-				            <span>Reddit</span>
-						</a>
-						<a href="https://www.cabstoken.com/" class="community__item">
-							<i class="icon-wrap">
-								<img src="images/cabslogo.png" alt="">
-							</i>
-				            <span>CABS中文社区</span>
-				        </a>
-					</div>
-				</dl>
-			</div>
-		</section>
-		<!-- / Community -->
-	</main>
+			<!-- / Cases -->
 	
-	<!-- MODAL -->
-	<div class="modal fade" id="modal-participate" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content" style="margin-top: 40px;">
-				<div class="modal-body" style="background-image: url('images/bgr-logo.jpg')">
-					<div class="row">
-						<div class="col-sm-5">
-							<h1 class="modal__title">Apply to <br>Participate</h1>
+			<!-- Roadmap -->
+			<section class="section text-center" style="background-image: url(' images/bgr-roadmap.jpg');">
+				<div class="container container--sm">
+					<h1 class="section__title mb-3"><span>Roadmap</span></h1>
+	
+					<div class="roadmap">
+						<div class="roadmap__wrap">
+							<div class="roadmap__item">
+								<h3 class="roadmap__title">September 2014</h3>
+								<p>
+									CyberTrust S.A. set up in Luxembourg
+								</p>
+							</div>
 						</div>
-				
-						<div action="" class="col-sm-6">
-							<form  class="form" action="https://formspree.io/scott@c2cx.com" method="POST">
-								<div class="form-group">
-								    <label class="control-label" for="FirstName">First Name</label>
-								    <input type="text" class="form-control" id="FirstName" name="_firstname">
-								</div>
-								<div class="form-group">
-								    <label class="control-label" for="LastName">Last Name</label>
-								    <input type="text" class="form-control" id="LastName" name="_lastname">
-								</div>
-								<p class="form-group">
-									If you wish to be contacted, please supply contact information via Telegram, Whatsapp or Wechat. Due to spam filters, emails may not arrive .
+						<div class="roadmap__wrap">
+							<div class="roadmap__item">
+								<h3 class="roadmap__title">July 2016</h3>
+								<p>
+									Crypto investment fund project triggered by Ethereum investment opportunity.
 								</p>
-								<div class="form-group">
-								    <label class="control-label" for="LastName">Telegram</label>
-								    <input type="text" class="form-control" id="tel" name="_telegram">
-								</div>
-								<div class="form-group">
-								    <label class="control-label" for="LastName">WhatsApp</label>
-								    <input type="text" class="form-control" id="tel" name="_whatsapp">
-								</div>
-								<div class="form-group">
-								    <label class="control-label" for="LastName">WeChat</label>
-								    <input type="text" class="form-control" id="tel" name="_wechat">
-								</div>
-								<div class="form-group form-group--invalid"> 
-								    <label class="control-label" for="Email" >E-mail address</label>
-								    <input type="email" class="form-control" id="Email" name="_replyto" placeholder="name@email.com">
-								</div>
-							
-								<div class="form-group" style="position: relative;">
-								    <label class="control-label" for="Amount" style="top:-4px;-webkit-transform: scale(0.75);transform: scale(0.75);">Amount of CABS you want to buy</label>
-								   <select name="_amount" style="margin-top:30px;">
-								   	 <option>500-2,000</option>
-								   	 <option>2,000-5,000</option>
-								   	 <option>5,000-10,000</option>
-								   	 <option>10,000 or more</option>
-								   </select>
-								</div>
-								<p class="form-group">
-									Minimum purchase quantity for the closed round is 500 CABS.
+							</div>
+						</div>
+						<div class="roadmap__wrap">
+							<div class="roadmap__item">
+								<h3 class="roadmap__title">April 2017</h3>
+								<p>
+									Fund structure abandoned due to legal issues. Project restructured to direct securitisation instead.
 								</p>
-
-								<div class="checkbox">
-									<input type="checkbox" id="check1">
-									<label for="check1">
-										I have read and I agree to the <a href="TERMS_OF_SERVICE.pdf" target="_blank" style="color:#e90000">&nbsp;Terms of Use</a>
-									</label>
-								</div>
-								<div class="checkbox mb-2">
-									<input type="checkbox" id="check2">
-									<label for="check2">
-										I have read and I agree to the <a href="PRIVACY_POLICY.pdf" target="_blank" style="color:#e90000"> &nbsp;Privacy Policy</a>
-									</label>
-								</div>
-
-								<button type="submit" class="btn btn-secondary btn--lg btn--round" id="submit">Send Request</button>
-							</form>
+							</div>
+						</div>
+						<div class="roadmap__wrap">
+							<div class="roadmap__item">
+								<h3 class="roadmap__title">May 2017</h3>
+								<p>
+									Legal template for securitisation finalised.
+								</p>
+							</div>
+						</div>
+						<div class="roadmap__wrap">
+							<div class="roadmap__item">
+								<h3 class="roadmap__title">June 2017</h3>
+								<p>
+									Pass-through tax structure via Dutch Foundations created.
+								</p>
+							</div>
+						</div>
+						<div class="roadmap__wrap">
+							<div class="roadmap__item">
+								<h3 class="roadmap__title">July 2017</h3>
+								<p>
+									Signed mandate with SPV Administrator.
+								</p>
+							</div>
+						</div>
+						<div class="roadmap__wrap">
+							<div class="roadmap__item">
+								<h3 class="roadmap__title">August 2017</h3>
+								<p>
+									Engagement letter signed to appoint Ernst & Young as auditor.
+								</p>
+							</div>
+						</div>
+						<div class="roadmap__wrap roadmap__wrap--lg">
+							<div class="roadmap__item roadmap__item--important roadmap__item--red">
+								<span class="pointer"></span>
+								<h3 class="roadmap__title">November 2017</h3>
+								<p>
+									Initial Token Offering Closed Round & Pre-ICO
+								</p>
+							</div>
+						</div>
+	
+						<div class="roadmap__wrap">
+							<div class="roadmap__item">
+								<h3 class="roadmap__title">December 2017</h3>
+								<p>
+									Initial Token Offering
+								</p>
+							</div>
+						</div>
+	
+						<div class="roadmap__wrap">
+							<div class="roadmap__item">
+								<h3 class="roadmap__title">January 2018</h3>
+								<p>
+									CABS token lists on C2CX and other major crypto exchanges.
+								</p>
+							</div>
+						</div>
+	
+	
+	
+						<div class="roadmap__wrap roadmap__wrap--lg">
+							<div class="roadmap__item roadmap__item--important roadmap__item--lg">
+								<span class="pointer"></span>
+								<h3 class="roadmap__title">Q2 2018</h3>
+								<p>
+									BTC, ETH and BCC/BCH Global Crypto Notes are approved for clearing & settlement via regulated bank acting as paying agent and are listed on OTC markets worldwide.
+								</p>
+							</div>
 						</div>
 					</div>
-
-					<button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
-						<img src="images/cross.svg" alt="" class="icon icon-close">
-					</button>
+				</div>
+			</section>
+			<!-- / Roadmap -->
+	
+			<div class="buttons-wrap">
+				<a type="button" class="btn btn--lg btn--round btn-danger Participatenow" href='https://ico.cybertrust.io/in/Register' target='_blank'>Join the ICO</a>
+			</div>
+	
+	
+			<!-- Community -->
+			<section class="section">
+				<div class="container">
+					<div class="community">
+						<h3 class="community__title">Join our communities</h3 class="h3">
+						<div class="community__wrap">
+							<a href="http://t.me/cybertrustbank" class="community__item">
+								<i class="icon-wrap">
+									<i class="fa fa-paper-plane icon icon-social-telegram"> </i>
+								<!-- <svg role="img" class="icon icon-social-telegram"><use xlink:href="icons/icons.svg#icon-social-telegram"></use></svg> -->
+								</i>
+								<span>Telegram</span>
+							</a>
+							<a href="https://medium.com/cybertrustbank" class="community__item">
+								<i class="icon-wrap">
+								<!-- <svg role="img" class="icon icon-social-medium"><use xlink:href="icons/icons.svg#icon-social-medium"></use></svg> -->
+								<i class="fa fa-medium icon icon-social-medium"> </i>
+								</i>
+								<span>Medium</span>
+							</a>
+							<a href="https://twitter.com/cybertrustbank" class="community__item">
+								<i class="icon-wrap">
+								<i class="fa fa-twitter icon icon-social-medium"> </i>
+								</i>
+								<span>Twitter</span>
+							</a>
+							<a href="https://www.facebook.com/cybertrustbank" class="community__item">
+								<i class="icon-wrap">
+								<i class="fa fa-facebook icon icon-social-medium"> </i>
+								</i>
+								<span>Facebook</span>
+							</a>
+							<a href="https://www.reddit.com/r/CyberTrust/" class="community__item">
+								<i class="icon-wrap">
+								<i class="fa fa-reddit icon icon-social-medium"> </i>
+								</i>
+								<span>Reddit</span>
+							</a>
+							<a href="https://www.cabstoken.com/" class="community__item">
+								<i class="icon-wrap">
+									<img src=" images/cabslogo.png" alt="">
+								</i>
+								<span>CABS中文社区</span>
+							</a>
+						</div>
+						</dl>
+					</div>
+			</section>
+			<!-- / Community -->
+		</main>
+	
+		<!-- MODAL -->
+		<div class="modal fade" id="modal-participate" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content" style="margin-top: 40px;">
+					<div class="modal-body" style="background-image: url(' images/bgr-logo.jpg')">
+						<div class="row">
+							<div class="col-sm-5">
+								<h1 class="modal__title">Apply to <br>Participate</h1>
+							</div>
+	
+							<div action="" class="col-sm-6">
+								<form class="form" action="https://formspree.io/scott@c2cx.com" method="POST">
+									<div class="form-group">
+										<label class="control-label" for="FirstName">First Name</label>
+										<input type="text" class="form-control" id="FirstName" name="_firstname">
+									</div>
+									<div class="form-group">
+										<label class="control-label" for="LastName">Last Name</label>
+										<input type="text" class="form-control" id="LastName" name="_lastname">
+									</div>
+									<p class="form-group">
+										If you wish to be contacted, please supply contact information via Telegram, Whatsapp or Wechat. Due to spam filters, emails may not arrive .
+									</p>
+									<div class="form-group">
+										<label class="control-label" for="LastName">Telegram</label>
+										<input type="text" class="form-control" id="tel" name="_telegram">
+									</div>
+									<div class="form-group">
+										<label class="control-label" for="LastName">WhatsApp</label>
+										<input type="text" class="form-control" id="tel" name="_whatsapp">
+									</div>
+									<div class="form-group">
+										<label class="control-label" for="LastName">WeChat</label>
+										<input type="text" class="form-control" id="tel" name="_wechat">
+									</div>
+									<div class="form-group form-group--invalid">
+										<label class="control-label" for="Email">E-mail address</label>
+										<input type="email" class="form-control" id="Email" name="_replyto" placeholder="name@email.com">
+									</div>
+	
+									<div class="form-group" style="position: relative;">
+										<label class="control-label" for="Amount" style="top:-4px;-webkit-transform: scale(0.75);transform: scale(0.75);">Amount of CABS you want to buy</label>
+										<select name="_amount" style="margin-top:30px;">
+											<option>500-2,000</option>
+											<option>2,000-5,000</option>
+											<option>5,000-10,000</option>
+											<option>10,000 or more</option>
+									   </select>
+									</div>
+									<p class="form-group">
+										Minimum purchase quantity for the closed round is 500 CABS.
+									</p>
+	
+									<div class="checkbox">
+										<input type="checkbox" id="check1">
+										<label for="check1">
+											I have read and I agree to the <a href="../../pdf/TERMS_OF_SERVICE.pdf" target="_blank" style="color:#e90000">&nbsp;Terms of Use</a>
+										</label>
+									</div>
+									<div class="checkbox mb-2">
+										<input type="checkbox" id="check2">
+										<label for="check2">
+											I have read and I agree to the <a href="../../pdf/PRIVACY_POLICY.pdf" target="_blank" style="color:#e90000"> &nbsp;Privacy Policy</a>
+										</label>
+									</div>
+	
+									<button type="submit" class="btn btn-secondary btn--lg btn--round" id="submit">Send Request</button>
+								</form>
+							</div>
+						</div>
+	
+						<button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+							<img src=" images/cross.svg" alt="" class="icon icon-close">
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- / MODAL -->
+		<!-- / MODAL -->
 	<!-- FOOTER -->
 	<footer class="footer">
 		<div class="container">
@@ -1419,7 +1368,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<script src="js/plugins/countdown.min.js"></script>
 
-	<script src="js/init.2.js"></script>
+	<script src="js/init.3.js"></script>
 
 	<script type="text/javascript">
 _linkedin_data_partner_id = "159098";
