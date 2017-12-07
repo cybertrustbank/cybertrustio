@@ -17,35 +17,20 @@ $(document).ready(function() {
   	//SVG
   	svg4everybody();
 
-  	//COUNTER
+  	//COUNTER  
   	$('.countdown').countdown({
         date: "Fri Jan 5 2018 21:00:00 GMT+0800 (CST)",
         render: function(data) {
-            $(this.el).html("<div>" + this.leadingZeros(data.days, 0) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>" );
+            $(this.el).html("<div class='whitebg'>" + this.leadingZeros(data.days, 0) + " <span>days</span></div><div class='whitebg'>" + this.leadingZeros(data.hours, 2) + " <span>hours</span></div><div class='whitebg'>" + this.leadingZeros(data.min, 2) + " <span>minutes</span></div><div class='whitebg'>" + this.leadingZeros(data.sec, 2) + " <span>seconds</span></div>" );
           }
     });
-    //COUNTER2
-    $('.countdown_two').countdown({
-      date: "Wed Dec 5 2018 21:00:00 GMT+0800 (CST)",
-      render: function(data) {
-          $(this.el).html("<div>" + this.leadingZeros(data.days, 0) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
-      }
-    }); 
-    //COUNTER_CN
+
     $('.countdowncn').countdown({
       date: "Fri Jan 5 2018 21:00:00 GMT+0800 (CST)",
       render: function(data) {
-          $(this.el).html("<div>" + this.leadingZeros(data.days, 0) + " <span>天</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>时</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>分</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>秒</span></div>");
-      }
-    });
-
-    //COUNTER2_CN
-    $('.countdowncn_two').countdown({
-        date: "Mon Jan 15 2017 21:00:00 GMT+0800 (CST)",
-        render: function(data) {
-            $(this.el).html("<div>" + this.leadingZeros(data.days, 0) + " <span>天</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>时</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>分</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>秒</span></div>");
+          $(this.el).html("<div class='whitebg'>" + this.leadingZeros(data.days, 0) + " <span>天</span></div><div class='whitebg'>" + this.leadingZeros(data.hours, 2) + " <span>时</span></div><div class='whitebg'>" + this.leadingZeros(data.min, 2) + " <span>分</span></div><div class='whitebg'>" + this.leadingZeros(data.sec, 2) + " <span>秒</span></div>" );
         }
-    }); 
+  });
 
     //COUNTER_BORNES  
     $('.countdown_bonus').countdown({
@@ -157,9 +142,12 @@ $(document).ready(function() {
         dataType : "json",
         data : {},
         success : function(data) {
-            $(".current_cabs").html((30000-parseFloat(data.Json.ICO.RestCABS)).toFixed(2));
+          // total——cabs
+            $(".total_cabs").html(((30000-parseFloat(data.Json.ICO.RestCABS))+parseFloat(115931.46763636)).toFixed(2));
+          // current——cabs
+          $(".current_cabs").html((30000-parseFloat(data.Json.ICO.RestCABS)).toFixed(2));
             $(".progress").width((30000-parseFloat(data.Json.ICO.RestCABS))*100/30000+'%');
-            $(".allprogress").width((30000-parseFloat(data.Json.ICO.RestCABS))*100/230000+'%');
+            $(".allprogress").width(((30000-parseFloat(data.Json.ICO.RestCABS))+parseFloat(115931.46763636))*100/230000+'%');
             $("#restCabs").html((230000-(30000-parseFloat(data.Json.ICO.RestCABS))).toFixed(2));
             if(parseFloat(data.Json.ICO.RestCABS)>=30000){
               $(".progress").width('100%');
