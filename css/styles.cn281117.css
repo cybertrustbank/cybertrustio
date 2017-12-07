@@ -969,7 +969,7 @@ button:active:not(.btn) {
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: -20px;
+    /* margin: -20px; */
 }
 
 @media (min-width: 992px) {
@@ -3064,4 +3064,90 @@ img {
     -webkit-animation-delay: 0.4s;
     -ms-animation-delay:0.4s;
     -moz-animation-delay:0.4s;
+}
+
+/* signin/up button*/
+.sign_in_btn{
+    background-color: #f2f2f2;
+    color: #d62d1f;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.sign_up_btn{
+    border-radius: 0;
+    margin-left: -4px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+/* countdown-whitebackground */
+.whitebg{
+    background:#fff;
+    padding:5px 15px;
+    border-radius: 10px;
+}
+.whitebg span{
+    font-size: 14px;
+}
+.countdown_detail{
+    padding: 50px 15px;
+}
+/* whitepaper_language */
+.whitePaper_language{
+    margin-left: 22%;
+    padding-left: 0;
+}
+.whitePaper_language li{
+    margin: 10px;
+    float: left;
+    height: 20px;
+    margin-left: 20px;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+.whitePaper_language li:first-child{
+    font-size: 18px;
+}
+.whitePaper_language img{
+    height: 100%;
+}
+@media (max-width: 768px) {
+    .whitePaper_language{
+        margin-left: 0;
+    }
+}
+/* expense */
+.expense{
+    max-width: 500px;
+    padding: 0 20px;
+}
+.expense_content{
+    margin-bottom: 20px;
+}
+.expense_progress{
+    height: 6px;
+    margin: 0 4px;
+    border-radius: 5px;
+}
+.expense_progress>div{
+    width: 10%;
+    height: 6px;
+    background: #e90000;
+    border-radius: 5px;
+}
+.expense_txt{
+    height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+.expense_txt img{
+    width: 16px;
+    height: 16px;
+}
+.expense_percent{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
 }

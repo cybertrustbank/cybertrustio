@@ -49,6 +49,7 @@ body {
     height: 100%;
     min-width: 320px;
     position: relative;
+    overflow-x: hidden;
 }
 
 body * {
@@ -945,7 +946,7 @@ button:active:not(.btn) {
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: -20px;
+    /* margin: -20px; */
 }
 
 @media (min-width: 992px) {
@@ -3180,6 +3181,7 @@ img {
   display: inline-block;
   border: 0;
   padding: 10px 20px;
+  font-weight: bold;
 }
 
 .sign-buttons__button--in {
