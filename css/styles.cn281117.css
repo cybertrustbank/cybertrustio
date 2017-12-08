@@ -1334,12 +1334,13 @@ a.stack__item:hover {
 
 .roadmap:before {
     content: '';
-    width: 1px;
-    height: 100%;
+    /* width: 2px; */
+    height: calc(100% - 130px);
     display: block;
-    background-color: #000;
+    /* background-color: #d43029; */
+    border: 1px dashed #d43029;
     position: absolute;
-    left: 50%;
+    left: calc(50% + 1px);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -3066,88 +3067,190 @@ img {
     -moz-animation-delay:0.4s;
 }
 
-/* signin/up button*/
-.sign_in_btn{
-    background-color: #f2f2f2;
-    color: #d62d1f;
-    border-radius: 0;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-}
-.sign_up_btn{
-    border-radius: 0;
-    margin-left: -4px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-/* countdown-whitebackground */
-.whitebg{
-    background:#fff;
-    padding:5px 15px;
-    border-radius: 10px;
-}
-.whitebg span{
-    font-size: 14px;
-}
-.countdown_detail{
-    padding: 50px 15px;
-}
-/* whitepaper_language */
-.whitePaper_language{
-    margin-left: 22%;
-    padding-left: 0;
-}
-.whitePaper_language li{
-    margin: 10px;
-    float: left;
-    height: 20px;
-    margin-left: 20px;
-    list-style-type: none;
-    font-weight: 600;
-    font-size: 16px;
-}
-.whitePaper_language li:first-child{
+/* Links under video */
+.video-links {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
     font-size: 18px;
-}
-.whitePaper_language img{
-    height: 100%;
-}
-@media (max-width: 768px) {
-    .whitePaper_language{
-        margin-left: 0;
+  }
+  
+  .video-links__item {
+    display: inline-flex;
+    margin: 0 10px;
+  }
+  
+  .video-links__icon {
+    transform: translateY(-2px);
+  }
+  
+  .link-red {
+    color: #e90000;
+    transition: all .3s ease 0s;
+  }
+  /* / Links under video */
+  
+  /* Expense */
+  .expense {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 20px;
+    width: 460px;
+  }
+  
+  @media (max-width: 575px) {
+    .expense {
+      width: 100%;
+      padding: 0 10px;
     }
-}
-/* expense */
-.expense{
-    max-width: 500px;
-    padding: 0 20px;
-}
-.expense_content{
-    margin-bottom: 20px;
-}
-.expense_progress{
-    height: 6px;
-    margin: 0 4px;
-    border-radius: 5px;
-}
-.expense_progress>div{
-    width: 10%;
-    height: 6px;
+  }
+  
+  .expense__item {
+    display: block;
+  }
+  
+  .expense__title {
+    display: inline-block;
+    width: 400px;
+    text-align: left;
+  }
+  
+  .expense__percentage {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    width: 50px;
+  }
+  
+  .expense__weight {
     background: #e90000;
     border-radius: 5px;
-}
-.expense_txt{
-    height: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 5px 0;
-}
-.expense_txt img{
-    width: 16px;
-    height: 16px;
-}
-.expense_percent{
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 30px;
-}
+    height: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .expense__icon {
+    transform: translateY(-2px);
+  }
+  /* / Expense */
+  
+  /* Modals */
+  .remodal {
+    vertical-align: top !important;
+    max-width: 550px !important;
+  }
+  
+  .remodal-wrapper {
+    padding: 0 !important;
+  }
+  
+  .remodal--sign {
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 50px 150px 0 rgba(0, 0, 0, .1);
+  }
+  
+  .remodal-overlay {
+    background: rgba(240, 240, 240, .9) !important;
+  }
+  
+  .dialog {
+    font-size: 14px;
+  }
+  
+  .dialog__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e90000;
+  }
+  
+  .dialog__ex {
+    display: inline-block;
+    font-size: 18px;
+    transform: translateY(2px);
+  }
+  
+  .dialog__inner {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+  
+  .dialog__button {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -35px;
+  }
+  
+  .sign-form {}
+  
+  .sign-form__input {
+    background: #f2f2f2;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  
+  .sign-form__field {
+    margin: 20px 0;
+  }
+  
+  .sign-form__field--margin {
+    margin: 40px 0;
+  }
+  
+  .btn-sign {
+    font-size: 26px;
+    padding: 20px 80px;
+  }
+  /* / Modals */
+  
+  /* Sign buttons */
+  .sign-buttons {
+    display: flex;
+  }
+  
+  .sign-buttons__button {
+    display: inline-block;
+    border: 0;
+    padding: 10px 20px;
+  }
+  
+  .sign-buttons__button--in {
+    background: #f2f2f2;
+    color: #e90000;
+    border-radius: 21px 0 0 21px;
+  }
+  
+  .sign-buttons__button--in img {
+    margin-right: 5px;
+  }
+  
+  .sign-buttons__button--up {
+    background: #e90000;
+    color: #fff;
+    border-radius: 0 21px 21px 0;
+  }
+  
+  .sign-buttons__button--up:hover {
+    color: #fff;
+  }
+  /* / Sign buttons */
+  
+  /* countdown-whitebackground */
+  .whitebg{
+      background:#fff;
+      padding:5px 15px;
+      border-radius: 10px;
+   }
+  .whitebg span{
+      font-size: 14px;
+  }
+  .countdown_detail{
+      padding: 50px 15px;
+  }

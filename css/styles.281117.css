@@ -1309,10 +1309,11 @@ a.stack__item:hover {
 
 .roadmap:before {
     content: '';
-    width: 2px;
-    height: calc(100% - 170px);
+    /* width: 2px; */
+    height: calc(100% - 130px);
     display: block;
-    background-color: #d43029;
+    /* background-color: #d43029; */
+    border: 1px dashed #d43029;
     position: absolute;
     left: calc(50% + 1px);
     -webkit-transform: translateX(-50%);
@@ -1985,13 +1986,13 @@ a.stack__item:hover {
 }
 
 .counter-wrap--fixed .countdown,
-.counter-wrap--fixed .countdown_two {
+.counter-wrap--fixed .countdowncn {
     margin: 0 20px;
 }
 
 @media (max-width: 768px) {
     .counter-wrap--fixed .countdown,
-    .counter-wrap--fixed .countdown_two {
+    .counter-wrap--fixed .countdowncn {
         margin-bottom: 10px;
     }
 }
@@ -2100,14 +2101,14 @@ a.stack__item:hover {
 \*------------------------------------*/
 
 .countdown,
-.countdown_two {
+.countdowncn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
 .countdown div,
-.countdown_two div {
+.countdowncn div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2125,7 +2126,7 @@ a.stack__item:hover {
 }
 
 .countdown div span,
-.countdown_two div span {
+.countdowncn div span {
     font-size: 14px;
     opacity: .5;
     letter-spacing: .1px;
@@ -2133,13 +2134,13 @@ a.stack__item:hover {
 }
 
 .countdown div:not(:last-child),
-.countdown_two div:not(:last-child) {
+.countdowncn div:not(:last-child) {
     margin-right: 40px;
     position: relative;
 }
 
 .countdown div:not(:last-child):after,
-.countdown_two div:not(:last-child):after {
+.countdowncn div:not(:last-child):after {
     content: ':';
     position: absolute;
     top: 50%;
@@ -2153,7 +2154,7 @@ a.stack__item:hover {
 
 @media (max-width: 768px) {
     .countdown div,
-    .countdown_two div {
+    .countdowncn div {
         font-size: 22px;
     }
 }
@@ -2629,7 +2630,7 @@ img {
 }
 
 .half_layout .countdown,
-.half_layout .countdown_two {
+.half_layout .countdowncn {
     justify-content: center;
     align-items: center;
 }
@@ -2912,7 +2913,8 @@ img {
     transform: translate(-50%);
     bottom: -20px;
 }
-.round_detail .countdown{
+.round_detail .countdown,
+.round_detail .countdowncn{
     margin-top: 25px;
 }
 .current_price{
@@ -3202,3 +3204,16 @@ img {
   color: #fff;
 }
 /* / Sign buttons */
+
+/* countdown-whitebackground */
+.whitebg{
+    background:#fff;
+    padding:5px 15px;
+    border-radius: 10px;
+ }
+.whitebg span{
+    font-size: 14px;
+}
+.countdown_detail{
+    padding: 50px 15px;
+}

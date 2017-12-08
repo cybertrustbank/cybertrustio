@@ -143,29 +143,29 @@ $(document).ready(function() {
         data : {},
         success : function(data) {
           // total——cabs
-            $(".total_cabs").html(((30000-parseFloat(data.Json.ICO.RestCABS))+parseFloat(115931.46763636)).toFixed(2));
+          $(".total_cabs").html(((30000-parseFloat(data.Json.ICO.RestCABS))+parseFloat(115931.46763636)).toFixed(2));
           // current——cabs
           $(".current_cabs").html((30000-parseFloat(data.Json.ICO.RestCABS)).toFixed(2));
-            $(".progress").width((30000-parseFloat(data.Json.ICO.RestCABS))*100/30000+'%');
-            $(".allprogress").width(((30000-parseFloat(data.Json.ICO.RestCABS))+parseFloat(115931.46763636))*100/230000+'%');
-            $("#restCabs").html((230000-(30000-parseFloat(data.Json.ICO.RestCABS))).toFixed(2));
-            if(parseFloat(data.Json.ICO.RestCABS)>=30000){
-              $(".progress").width('100%');
+          $(".progress").width((30000-parseFloat(data.Json.ICO.RestCABS))*100/30000+'%');
+          $(".allprogress").width(((30000-parseFloat(data.Json.ICO.RestCABS))+parseFloat(115931.46763636))*100/250000+'%');
+          $("#restCabs").html((230000-(30000-parseFloat(data.Json.ICO.RestCABS))).toFixed(2));
+          if(parseFloat(data.Json.ICO.RestCABS)>=30000){
+            $(".progress").width('100%');
+          }
+          $.each(data.Json.AssetInfos,function(i,obj){
+            if(obj.AssetTypeId == 2){
+              $(".BTC").html(obj.MarketPrice);
             }
-            $.each(data.Json.AssetInfos,function(i,obj){
-              if(obj.AssetTypeId == 2){
-                $(".BTC").html(obj.MarketPrice);
-              }
-              if(obj.AssetTypeId == 5){
-                $(".ETH").html(obj.MarketPrice);
-              }
-              if(obj.AssetTypeId == 6){
-                $(".ETC").html(obj.MarketPrice);
-              }
-              if(obj.AssetTypeId == 9){
-                $(".BCC").html(obj.MarketPrice);
-              }
-            })
+            if(obj.AssetTypeId == 5){
+              $(".ETH").html(obj.MarketPrice);
+            }
+            if(obj.AssetTypeId == 6){
+              $(".ETC").html(obj.MarketPrice);
+            }
+            if(obj.AssetTypeId == 9){
+              $(".BCC").html(obj.MarketPrice);
+            }
+          })
         },
         error:function(data){
           return;
