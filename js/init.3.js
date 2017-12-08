@@ -143,13 +143,13 @@ $(document).ready(function() {
         data : {},
         success : function(data) {
           // total——cabs
-          $(".total_cabs").html(((30000-parseFloat(data.Json.ICO.RestCABS))+parseFloat(115931.46763636)).toFixed(2));
+          $(".total_cabs").html(((50000-parseFloat(data.Json.ICO.RestCABS))+parseFloat(115931.46763636)).toFixed(2));
           // current——cabs
-          $(".current_cabs").html((30000-parseFloat(data.Json.ICO.RestCABS)).toFixed(2));
-          $(".progress").width((30000-parseFloat(data.Json.ICO.RestCABS))*100/30000+'%');
-          $(".allprogress").width(((30000-parseFloat(data.Json.ICO.RestCABS))+parseFloat(115931.46763636))*100/250000+'%');
-          $("#restCabs").html((230000-(30000-parseFloat(data.Json.ICO.RestCABS))).toFixed(2));
-          if(parseFloat(data.Json.ICO.RestCABS)>=30000){
+          $(".current_cabs").html((50000-parseFloat(data.Json.ICO.RestCABS)).toFixed(2));
+          $(".progress").width((50000-parseFloat(data.Json.ICO.RestCABS))*100/50000+'%');
+          $(".allprogress").width(((50000-parseFloat(data.Json.ICO.RestCABS))+parseFloat(115931.46763636))*100/250000+'%');
+          $("#restCabs").html((250000-(50000-parseFloat(data.Json.ICO.RestCABS))).toFixed(2));
+          if(parseFloat(data.Json.ICO.RestCABS)>=50000){
             $(".progress").width('100%');
           }
           $.each(data.Json.AssetInfos,function(i,obj){
